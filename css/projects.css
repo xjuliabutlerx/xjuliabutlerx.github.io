@@ -73,16 +73,6 @@ Metallic Sunburst - #9B7E46 (gold)
   text-align: left;
 }
 
-.Overview_Skills {
-  align-content: center;
-}
-
-.Overview_Skills th, td, ul {
-  font-size: 18px;
-  font-family: "Avenir Next";
-  text-align: left;
-}
-
 .Footer {
   background-color: #E0E0E2;
   text-align: center;
@@ -91,6 +81,7 @@ Metallic Sunburst - #9B7E46 (gold)
 
 .Footer p {
   font-size: 16px;
+  text-align: center;
   color: #0E1116;
   font-family: "Avenir Next";
 }

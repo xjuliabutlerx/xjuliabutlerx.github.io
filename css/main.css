@@ -45,7 +45,7 @@ Metallic Sunburst - #9B7E46 (gold)
 .Introduction {
   /*padding-top: 70px;*/
   /*padding-bottom: 70px;*/
-  height: 400px; /* This was originally 4000px */
+  /* height: 200px; This was originally 4000px */
   /*
   Commentting out the picture because it's not working quite right
   background-image: url("../img/Crim_Dell.JPG");
@@ -71,6 +71,37 @@ Metallic Sunburst - #9B7E46 (gold)
   font-size: 18px;
   font-family: "Avenir Next";
   text-align: center;
+}
+
+.Row {
+  height: 200px;
+}
+
+.Column {
+  float: left;
+  padding: 20px;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+.Column p {
+  font-size: 18px;
+  font-family: "Avenir Next";
+  text-align: left;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two
+columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 
 .Footer {

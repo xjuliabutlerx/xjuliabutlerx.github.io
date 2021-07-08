@@ -37,6 +37,7 @@ h1 {
   margin-top: 10px;
   width: 50%;
   float: left;
+  text-align: center;
 }
 
 .Left h1 {
@@ -46,7 +47,6 @@ h1 {
 .Left Portrait {
   margin-top: 10px;
   width: 50%;
-  float: center;
 }
 
 .Right {

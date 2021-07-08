@@ -1,0 +1,161 @@
+/*
+Color Pallette Guide:
+Gainsboro - #E0E0E2 (gray)
+Dark Red - #B10F2E
+Rich Black - #0E1116
+Metallic Sunburst - #9B7E46 (gold)
+/*
+
+/* CSS Code for making the Header of the Homepage */
+.Header {
+  padding: 20px;
+  background-color: #E0E0E2;
+}
+
+.Header h1 {
+  font-size: 32px;
+  font-family: "Avenir Next";
+  text-align: center;
+  color: #0E1116;
+}
+
+/* The navbar container */
+.Navigation {
+  overflow: hidden;
+  background-color: #B10F2E;
+}
+
+/* Navbar links */
+.Navigation a {
+  float: left;
+  display: block;
+  font-family: "Avenir Next";
+  color: #E0E0E2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Links - change color on hover */
+.Navigation a:hover {
+  background-color: #9B7E46;
+  color: #E0E0E2;
+}
+
+.Introduction {
+  align-content: left;
+  /*padding-top: 70px;*/
+  /*padding-bottom: 70px;*/
+  /* height: 200px; This was originally 4000px */
+  /*
+  Commentting out the picture because it's not working quite right
+  background-image: url("../img/Crim_Dell.JPG");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  */
+}
+
+.Introduction h1 {
+  font-size: 32px;
+  font-family: "Courier";
+  text-align: center;
+}
+
+.Introduction h2 {
+  font-size: 20px;
+  font-family: "Avenir Next";
+  text-align: center;
+}
+
+.Introduction p {
+  font-size: 18px;
+  font-family: "Avenir Next";
+  text-align: left;
+}
+
+.Experience {
+  align-content: center;
+}
+
+.Experience th, td, ul, li {
+  font-size: 18px;
+  font-family: "Avenir Next";
+  text-align: left;
+}
+
+img ~ td {
+  margin-right: 20px;
+}
+
+.Experience ul {
+  width: 500px;
+  font-size: 18px;
+  font-family: "Avenir Next";
+  text-align: left;
+  border-style: solid;
+  border-width: thin;
+  /* border-bottom: 0.5px black; */
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+}​
+
+.Title p {
+  font-size: 18px;
+  font-family: "Avenir Next";
+  text-align: left;
+}
+
+#Maple_Street {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: auto;
+  background-size: cover;
+  padding-right: 10px;
+}
+
+#Honor_Council {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  padding-right: 10px;
+}
+
+#WM {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  padding-right: 10px;
+}
+
+.Footer {
+  background-color: #E0E0E2;
+  text-align: center;
+  padding: 10px;
+}
+
+.Footer p {
+  font-size: 16px;
+  color: #0E1116;
+  font-family: "Avenir Next";
+}
+
+.Footer a {
+  font-size: 16px;
+  color: #0E1116;
+  font-family: "Avenir Next";
+}
+
+.Footer a:hover {
+  background-color: #9B7E46;
+  color: #E0E0E2;
+}

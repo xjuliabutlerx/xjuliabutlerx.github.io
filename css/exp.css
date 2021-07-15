@@ -101,6 +101,12 @@ img ~ td {
   border-bottom-style: none;
 }​
 
+.Experience.Description ul {
+  font-size: 18px;
+  font-family: "Avenir Next";
+  text-align: left;
+}
+
 .Title p {
   font-size: 18px;
   font-family: "Avenir Next";

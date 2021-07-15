@@ -88,7 +88,7 @@ img ~ td {
   margin-right: 20px;
 }
 
-.Experience ul {
+ul.JobDescription {
   width: 500px;
   font-size: 18px;
   font-family: "Avenir Next";
@@ -101,11 +101,27 @@ img ~ td {
   border-bottom-style: none;
 }​
 
-.Experience #Description {
+p.Space {
+  font-size: 0;
+  margin-bottom: 0;
+}
+
+ul.Description {
+  list-style-position: outside;
+  margin-left: -0.25em;
+  margin-top: -18px;
   font-size: 18px;
   font-family: "Avenir Next";
   text-align: left;
   border-style: none;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+}
+
+li.Description {
+  margin-left: -1em;
 }
 
 .Title p {

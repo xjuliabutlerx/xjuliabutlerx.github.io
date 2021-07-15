@@ -105,6 +105,7 @@ img ~ td {
   font-size: 18px;
   font-family: "Avenir Next";
   text-align: left;
+  border-style: none;
 }
 
 .Title p {

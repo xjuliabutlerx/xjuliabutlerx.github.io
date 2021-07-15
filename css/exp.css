@@ -101,7 +101,7 @@ img ~ td {
   border-bottom-style: none;
 }​
 
-.Experience.Description ul {
+#Description {
   font-size: 18px;
   font-family: "Avenir Next";
   text-align: left;

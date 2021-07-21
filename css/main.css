@@ -44,16 +44,20 @@ Metallic Sunburst - #9B7E46 (gold)
 
 .Introduction {
   align-content: left;
-  /*padding-top: 70px;*/
-  /*padding-bottom: 70px;*/
-  /* height: 200px; This was originally 4000px */
-  /*
-  Commentting out the picture because it's not working quite right
-  background-image: url("../img/Crim_Dell.JPG");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  */
+}
+
+.Introduction a {
+  font-size: 18px;
+  color: #000000;
+}
+
+.Introduction a:visited {
+  font-size: 18px;
+  color: #000000;
+}
+
+.Introduction a:hover {
+  color: #9B7E46;
 }
 
 .Introduction h1 {

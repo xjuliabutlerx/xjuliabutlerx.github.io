@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Honor Council Participation App - Julia Butler</title>
+    <link rel="stylesheet" href="../style/HonorCouncilApp.css"/>
+  </head>
+  <body>
+    <div class="Header">
+      <h1>Julia Butler</h1>
+    </div>
+
+    <div class="Navigation">
+      <!-- Put in links and text for navigation -->
+      <a href="../../index.html" target="_self">Home</a>
+      <a href="../../projects.html" target="_self">Projects</a>
+      <a href="../../exp.html" target="_self">Experience</a>
+      <a href="../../about.html" target="_self">About</a>
+    </div>
+
+    <div class="Back">
+      <!-- A back to project lists link-->
+      <p></p>
+      <a href="../../projects.html" target="_self">Back to Projects</a>
+    </div>
+
+    <div class="Project_Title">
+      <!-- Project Name-->
+      <h2>Honor Council Participation App</h2>
+      <p id="Note">Note: I do have a GitHub repository for this project. However, I have not made it public since the source code
+        contains private credentials used to access the Google Sheet.</p>
+    </div>
+
+    <div class="Project">
+      <!-- Introduction to Project-->
+      <p>After being elected by the student body to the Undergraduate Honor Council in the Fall 2019 semester, I overheard the
+        Executive Board discussing some problems about participation in casework. I reviewed the spreadsheet that they were
+        using to track participation and began to brainstorm helpful tools/statistics to help them recognize who might be a good fit for
+        casework. During the summer of 2020, I began to research tools that could help me accomplish this project.</p>
+
+      <p>As I embarked on this project, it was only after my first year of college where I had only taken the general computer science
+        course (CSCI 141). Additionally, the only 2 coding languages that I was fairly proficient in were JavaScript and Python. This was
+        one of the many challenges I faced while completing the application. Nonetheless, I focused on what I had learned in my computer
+        science class which included the <em>PyQt5</em> library to build the GUI.</p>
+
+      <p>Another obstacle I had to face was ensuring that if the application crashed, that the data could still be accessed. After
+        doing some research, I came across the <em>Google Drive API</em> for Python. I was then able to create a Google Sheet, which was
+        very similar to what the Executive Board was used to, and access the spreadsheet data in my Python source code.</p>
+
+      <p>The only downside to this API is its performance. It was clear after the first test I ran that it took a significant amount
+        of time for the API to read all the data and then update it. My solution to this problem was to simply take a few seconds prior
+        to displaying the GUI to read all of the data into Python arrays (one for each attribute) and allow the user to access data
+        from those arrays. During this pre-launch process, other statistics/reports would also be generated. However, it still takes some
+        time for data to be changed or updated.</p>
+
+      <p>Overall, this application's functionality can be summarized here:</p>
+      <ul>
+        <li>Providing statistics from the Google Sheet in a user interface</li>
+        <li>Calculating averages, minimums, and maximums of the Council's overall casework</li>
+        <li>Writing brief summaries of each members' contributions to casework</li>
+        <li>Suggesting certain members of Council for certain types of casework based on major/minor, foreign language knowledge, and participation statistics</li>
+      </ul>
+
+      <p>Lastly, there are a couple aspects of this project that I would like to change in the future. Firstly, at the time I was
+        making this application, I did not have a good understanding of efficiency. There are several sections of code that could be
+        faster. Specifically, there are some nested for-loops that could be eliminated. Since the API already takes a lot of time
+        updating data, it is important for me to make the rest of the app as fast as possible. On the topic of efficiency, I mentioned
+        previously that I used Python arrays for every attribute logged in the Google Sheet. In the future, I would like to explore
+        other solutions to this because I do not think this is the best option. Finally, after studying software development, I
+        would like to go through the code and refactor it as necessary. There could be some chunks of code that could be made into
+        functions to make it more readable. Also, while I do have comments in my code, I think more comments would be necessary for
+        the future when I am no longer a member of the Undergraduate Honor Council and someone else wants to maintain the app.</p>
+
+      <p>In summary, despite the issues I ran into when initially implementing my ideas, the Honor Council has adopted my app as its
+        main method of tracking participation, identifying members who have completed substantial casework, and determining which
+        members are most suitable for casework.</p>
+
+      <br>
+
+      <p>Feel free to watch this video of my app in action!</p>
+
+      <video id="Preview" controls>
+        <source src="../../vid/Honor_Council_App.mp4" type="video/mp4">
+      </video>
+
+    </div>
+
+
+    <div class="Footer">
+      <p>Julia Butler  •  <a href="https://www.linkedin.com/in/juliafulibutler/" target="_blank">LinkedIn</a></p>
+    </div>
+
+  </body>
+</html>

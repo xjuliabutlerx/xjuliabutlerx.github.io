@@ -56,52 +56,64 @@ Metallic Sunburst - #9B7E46 (gold)
   color: #9B7E46;
 }
 
-.Project_Introduction {
+.Project_Title {
   align-content: left;
-  /*padding-top: 70px;*/
-  /*padding-bottom: 70px;*/
-  /* height: 200px; This was originally 4000px */
-  /*
-  Commentting out the picture because it's not working quite right
-  background-image: url("../img/Crim_Dell.JPG");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  */
 }
 
-.Project_Introduction h1 {
+.Project_Title h1 {
   font-size: 32px;
   font-family: "Courier";
   text-align: center;
 }
 
-.Project_Introduction h2 {
+.Project_Title h2 {
   font-size: 20px;
   font-family: "Avenir Next";
   text-align: center;
 }
 
-.Project_Introduction p {
-  font-size: 18px;
-  font-family: "Avenir Next";
-  text-align: left;
-}
-
-.Project_Introduction a {
+.Project_Title p {
   font-size: 18px;
   font-family: "Avenir Next";
   text-align: left;
   color: #000000;
 }
 
-.Project_Introduction a:visited {
+.Project_Title p > a {
+  font-size: 18px;
+  font-family: "Avenir Next";
+  color: #000000;
+  text-align: left;
+}
+
+.Project_Title a:visited {
   font-family: "Avenir Next";
   color: #000000;
 }
 
-.Project_Introduction a:hover {
+.Project_Title a:hover {
   font-family: "Avenir Next";
+  color: #9B7E46;
+}
+
+.Project {
+  font-size: 18px;
+  font-family: "Avenir Next";
+  text-align: left;
+}
+
+.Project a {
+  font-size: 18px;
+  font-family: "Avenir Next";
+  color: #000000;
+  text-align: left;
+}
+
+.Project a:visited {
+  color: #000000;
+}
+
+.Project a:hover {
   color: #9B7E46;
 }
 

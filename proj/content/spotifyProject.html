@@ -27,354 +27,322 @@
       <!-- Introduction to Project-->
       <h2>Spotify Generational Music Trends</h2>
       <p>Link to <a href="https://github.com/xjuliabutlerx/generational-music-analysis" target="_blank">GitHub Repository</a></p>
+
+      <p><b>Introduction</b> <br>
+        My immediate family is stretched across 3 different "generations." My parents are both proud Baby Boomers
+        while my older brother is a Millennial and I am a Gen Z. Years and dates aren't necessary for you to understand that there
+        are some age gaps between the four of us. Although golf, dogs, and home-cooked meals make those age gaps seem
+        much smaller, the four of us all seem to have somewhat distinct music tastes.</p>
+
+      <p>In this data analysis project, I explore generation-defining music and attempt to use Spotify audio features to figure out what
+        musical attributes are most appealing to each generation. However, as a violinist and music fan myself, I understand that
+        numbers simply cannot quantify every characteristic in existence—especially when it comes to something as subjective as music.
+        That being said, take these results with a grain of salt.</p>
+
+      <p><b>Research and Sampling Methods</b> <br>
+        Before beginning data collection, I firstly defined the generations being analyzed. For this project, I am going to explore
+        Baby Boomers (born between 1946-1964), Generation X (1965-1980), Millennials/Generation Y (1981-1996), and Generation Z
+        (1997-2012). According to Google, these are the birth years generally considered for each generation.</p>
+
+      <p>Next, I began to puruse popular music for each generation. (Note that "popular music" here does not necessarily mean pop music;
+        I am referring to music that each generation liked to listened to). Some of the articles that I found listed 10 songs that
+        were popular at the time for each generation. While I could have used songs as the basis for this project, my sample sizes
+        for each generation would have been miniscule. Also, it was hard to find top song lists that stretched an entire generation.
+        Additionally, 10 songs are not necessarily representative of a whole generation's worth of popular music. Another route for
+        collecting data could be selecting specific artists and using all of their music. Again, this would be a viable solution.
+        However, it would run the risk of including music enjoyed by a different generation (leading to overlap) or including an artist
+        that may have had a one hit wonder.</p>
+
+      <p>After careful consideration, I eventually settled on finding the top 10 popular albums from each generation. It seemed to be
+        the best of both worlds, considering that it captured a group of popular songs from an artists, but still allowed for artists
+        with only a few popular songs. Additionally, songs for albums could include several singles that were released over a period
+        of time. It is also reasonable to assume that albums include at least 5 to 8 songs, generating a sample of 50 to 80 songs per
+        generation.</p>
+
+      <p>Below is a table of the albums that I explored and sources for each of these lists are linked in their respective column
+        headers:</p>
+
+      <table class="Sources">
+        <tr>
+          <th><a href="https://www.aarp.org/entertainment/music/info-11-2013/10-best-music-albums-for-boomers-photo.html#slide1"
+            target="_blank">Baby Boomers</a></th>
+          <th><a href="https://www.presstelegram.com/2015/12/28/grunge-rap-music-movements-of-the-early-1990s-became-gen-xs-soundtrack/"
+            target="_blank">Generation X</a></th>
+          <th><a href="https://www.aclib.us/research/blog/music-millennials"
+            target="_blank">Millennials</a></th>
+          <th>Generation Z <a href="https://www.rollingstone.com/music/music-lists/best-albums-2010s-ranked-913997/"
+            target="_blank">[1]</a>
+            <a href="https://www.ypulse.com/article/2019/10/08/the-17-musicians-gen-z-millennials-say-represent-their-generations/"
+            target="_blank">[2]</a></th>
+        </tr>
+        <tr>
+          <td><em>Highway 61 Revisited</em> (1965) by Bob Dylan</td>
+          <td><em>Nevermind</em> (1991) by Nirvana</td>
+          <td><em>Oops!…I Did It Again</em> (2000) by Britney Spears</td>
+          <td><em>My Beautiful Dark Twisted Fantasy</em> (2010) by Kanye West</td>
+        </tr>
+        <tr>
+          <td><em>Sgt. Pepper's Lonely Hearts Club Band</em> (1967) by The Beatles</td>
+          <td><em>Ten</em> (1991) by Pearl Jam</td>
+          <td><em>Bleed American</em> (2001) by Jimmy Eat World</td>
+          <td><em>Lemonade</em> (2016) by Beyoncé</td>
+        </tr>
+        <tr>
+          <td><em>What's Going On</em> (1971) by Marvin Gaye</td>
+          <td><em>The Chronic</em> (1992) by Dr. Dre</td>
+          <td><em>Under My Skin</em> (2004) by Avril Lavigne</td>
+          <td><em>To Pimp a Butterfly</em> (2015) by Kendrick Lamar</td>
+        </tr>
+        <tr>
+          <td><em>Tapestry</em> (1971) by Carole King</td>
+          <td><em>OK Computer</em> (1997) by Radiohead</td>
+          <td><em>Enema of the State</em> (1999) by Blink-182</td>
+          <td><em>Red</em> (2012) by Taylor Swift</td>
+        </tr>
+        <tr>
+          <td><em>Led Zeppelin IV</em> (1971) by Led Zeppelin</td>
+          <td><em>The Battle of Los Angeles</em> (1999) by Rage Against the Machine</td>
+          <td><em>Stripped</em> (2002) by Christina Aguilera</td>
+          <td><em>When We All Fall Asleep, Where Do We Go?</em> (2019) by Billie Eilish</td>
+        </tr>
+        <tr>
+          <td><em>Exile on Main St.</em> (1972) by The Rolling Stones</td>
+          <td><em>Sublime</em> (1996) by Sublime</td>
+          <td><em>Try This</em> (2003) by P!nk</td>
+          <td><em>Scorpion</em> (2018) by Drake</td>
+        </tr>
+        <tr>
+          <td><em>Innervisions</em> (1973) by Stevie Wonder</td>
+          <td><em>Blood Sugar Sex Magik</em> (1991) by Red Hot Chili Peppers</td>
+          <td><em>American Idiot</em> (2004) by Green Day</td>
+          <td><em>Melodrama</em> (2017) by Lorde</td>
+        </tr>
+        <tr>
+          <td><em>Eagles: Their Greatest Hits 1971–1975</em> (1976) by Eagles</td>
+          <td><em>Out of Time (1989)</em> by R.E.M.</td>
+          <td><em>The Eminem Show</em> (1992) by Eminem</td>
+          <td><em>21</em> (2011) by Adele</td>
+        </tr>
+        <tr>
+          <td><em>Exodus</em> (1977) by Bob Marley & the Wailers</td>
+          <td><em>Tragic Kingdom</em> (1995) by No Doubt</td>
+          <td><em>Backstreet Boys</em> (1997) by Backstreet Boys</td>
+          <td><em>thank u, next</em> (2019) by Ariana Grande</td>
+        </tr>
+        <tr>
+          <td><em>Saturday Night Fever: The Original Movie Sound Track</em> (1977) by Various Artists</td>
+          <td><em>Mellon Collie and the Infinite Sadness</em> (1995) by Smashing Pumpkins</td>
+          <td><em>From Under the Cork Tree</em> (2005) by Fallout Boy</td>
+          <td><em>My World 2.0</em> (2010) by Justin Bieber</td>
+        </tr>
+      </table>
+
+      <p><b>Data Collection and Analysis</b> <br>
+        After gathering this list of albums, I began to research and learn the Python API Spotipy. This is a tool that allows me to
+        connect some Python source code to
+        <a href="https://developer.spotify.com/documentation/web-api/" target="_blank">Spotify's Web API</a>. This tool would not
+        only serve as a means of collecting all of the song titles, but also as my source of analysis. Spotify's Web API has audio
+        track features that quantify characteristics of each song, such as the amount of spoken words and use of instruments rather
+        than electronic synthesizers. On the Spotify API documentation, there are 13 quantified characteristics:
+        <span class="Attributes">Accousticness</span>,
+        <span class="Attributes">Danceability</span>,
+        <span class="Attributes">Duration</span>,
+        <span class="Attributes">Energy</span>,
+        <span class="Attributes">Instrumentalness</span>,
+        <span class="Attributes">Key</span>,
+        <span class="Attributes">Liveness</span>,
+        <span class="Attributes">Loudness</span>,
+        <span class="Attributes">Mode</span>,
+        <span class="Attributes">Speechiness</span>,
+        <span class="Attributes">Tempo</span>,
+        <span class="Attributes">Time Signature</span>, and
+        <span class="Attributes">Valence</span>.
+        While most of these attributes measure a specific characteristic of music, a couple of them do overlap. For instance,
+        <span class="Attributes">Mode</span> and <span class="Attributes">Key</span> both measure types of key signatures.
+        <span class="Attributes">Key</span> is more specific whereas <span class="Attributes">Mode</span> is either major or minor.
+        Since it has been proven that people generally like songs in major keys rather than minor keys, I decided to only analyze
+        <span class="Attributes">Mode</span>. Another example is <span class="Attributes">Tempo</span> and
+        <span class="Attributes">Time Signature</span>. <span class="Attributes">Time Signature</span> specifies the number of
+        beats in a measure, but <span class="Attributes">Tempo</span> specifies how fast those beats are played. As a result,
+        I decided to only analyze <span class="Attributes">Tempo</span>. Lastly, the final attribute I decided to not include
+        in this project is <span class="Attributes">Loudness</span>. The reason being is because as a violinist, I was taught
+        that loudness does not impact whether or not music is good; the quality of music is dependent on other variables,
+        which are better demonstrated by the other attributes. The remaining 10 attributes are defined in my findings.</p>
+
+      <p>Next, I wrote some Python code that gathered all of these songs, their respective track
+        attributes, and printed them in the console for me to transfer to CSV files for each generation. Of course, before
+        proceeding to the analysis part of this project, I spell-checked the output and removed any commas. These CSV files,
+        as well as the Python code for sifting through the API's output, can all be found on my GitHub repository which is linked
+        at the top of the page.</p>
+
+      <p>The analysis portion of this project took place in R. I learned about R in my MATH 352 Statistical Data Analysis course.
+        I used the CSV files and imported them into the R workspace to run Welch Two Sample t-tests in which the variances are not
+        equal. All of my tests can be found on my GitHub repository.</p>
     </div>
 
-    <!-- Acousticness Graph-->
-    <div class='tableauPlaceholder' id='viz1627164008349' style='position: relative'>
-      <noscript>
-        <a href='#'>
-          <img alt='Acousticness '
-          src='https:&#47;&#47;
-          public.tableau.com&#47;static&#47;
-          images&#47;Ac&#47;
-          Acousticness_16251917974040&#47;
-          Acousticness&#47;1_rss.png'
-          style='border: none' />
-        </a>
-      </noscript>
-      <object class='tableauViz'  style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='Acousticness_16251917974040&#47;Acousticness' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image' value='https:&#47;
-        &#47;public.tableau.com&#47;
-        static&#47;images&#47;
-        Ac&#47;
-        Acousticness_16251917974040&#47;
-        Acousticness&#47;1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en-US' />
-        <param name='filter' value='publish=yes' />
-      </object>
+    <!-- ACOUSTICNESS -->
+    <div class="Definition">
+      <p><b>Findings</b></p>
+      <span class="Attributes">Acousticness</span> <br>
+      <span>A confidence measure from 0.0 to 1.0 of whether the track is acoustic.
+        1.0 represents high confidence the track is acoustic.</span>
     </div>
-    <script type='text/javascript'>
-      var divElement = document.getElementById('viz1627164008349');
-      var vizElement = divElement.getElementsByTagName('object')[0];
-      vizElement.style.width='100%';
-      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-      var scriptElement = document.createElement('script');
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
 
-    <!-- Danceability Graph-->
-    <div class='tableauPlaceholder' id='viz1627164225706' style='position: relative'>
-      <noscript>
-        <a href='#'>
-          <img alt='Danceability '
-          src='https:&#47;
-          &#47;
-          public.tableau.com&#47;
-          static&#47;
-          images&#47;
-          Ac&#47;
-          Acousticness_16251917974040&#47;
-          Danceability&#47;1_rss.png' style='border: none' />
-        </a>
-      </noscript>
-      <object class='tableauViz'  style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='Acousticness_16251917974040&#47;Danceability' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image' value='https:&#47;&#47;
-        public.tableau.com&#47;
-        static&#47;
-        images&#47;
-        Ac&#47;
-        Acousticness_16251917974040&#47;
-        Danceability&#47;1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en-US' />
-        <param name='filter' value='publish=yes' />
-      </object>
-    </div>
-    <script type='text/javascript'>
-      var divElement = document.getElementById('viz1627164225706');
-      var vizElement = divElement.getElementsByTagName('object')[0];
-      vizElement.style.width='100%';
-      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-      var scriptElement = document.createElement('script');
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
-
-    <!-- Duration Graph-->
-    <div class='tableauPlaceholder' id='viz1627164406608' style='position: relative'>
-      <noscript>
-        <a href='#'>
-          <img alt='Duration '
-            src='https:&#47;
-            &#47;
-            public.tableau.com&#47;
-            static&#47;
-            images&#47;
-            Ac&#47;
-            Acousticness_16251917974040&#47;
-            Duration&#47;1_rss.png' style='border: none' />
-          </a>
-    </noscript>
-    <object class='tableauViz'  style='display:none;'>
-      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-      <param name='embed_code_version' value='3' />
-      <param name='site_root' value='' />
-      <param name='name' value='Acousticness_16251917974040&#47;Duration' />
-      <param name='tabs' value='no' />
-      <param name='toolbar' value='yes' />
-      <param name='static_image' value='https:&#47;&#47;
-        public.tableau.com&#47;
-        static&#47;
-        images&#47;
-        Ac&#47;
-        Acousticness_16251917974040&#47;
-        Duration&#47;1.png' />
-      <param name='animate_transition' value='yes' />
-      <param name='display_static_image' value='yes' />
-      <param name='display_spinner' value='yes' />
-      <param name='display_overlay' value='yes' />
-      <param name='display_count' value='yes' />
-      <param name='language' value='en-US' />
-      <param name='filter' value='publish=yes' />
-    </object>
-    </div>
-    <script type='text/javascript'>
-      var divElement = document.getElementById('viz1627164406608');
-      var vizElement = divElement.getElementsByTagName('object')[0];
-      vizElement.style.width='100%';
-      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-      var scriptElement = document.createElement('script');
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
-
-    <!-- Energy Graph-->
-    <div class='tableauPlaceholder' id='viz1627164610769' style='position: relative'>
-      <noscript>
-        <a href='#'>
-          <img alt='Energy ' src='https:&#47;
-          &#47;
-          public.tableau.com&#47;
-          static&#47;
-          images&#47;
-          Ac&#47;
-          Acousticness_16251917974040&#47;
-          Energy&#47;1_rss.png' style='border: none' />
-        </a>
-      </noscript>
-      <object class='tableauViz'  style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='Acousticness_16251917974040&#47;Energy' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image' value='https:&#47;
-          &#47;public.tableau.com&#47;
-          static&#47;
-          images&#47;
-          Ac&#47;
-          Acousticness_16251917974040&#47;
-          Energy&#47;1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en-US' />
-        <param name='filter' value='publish=yes' />
-      </object>
-    </div>
-    <script type='text/javascript'>
-      var divElement = document.getElementById('viz1627164610769');
-      var vizElement = divElement.getElementsByTagName('object')[0];
-      vizElement.style.width='100%';
-      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-      var scriptElement = document.createElement('script');
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
-
-    <!-- Instrumentalness Graph-->
-    <div class='tableauPlaceholder' id='viz1627169611230' style='position: relative'>
-      <noscript>
-        <a href='#'>
-          <img alt='Instrumentalness ' src='https:&#47;
+    <div class="Row">
+      <div class="Col">
+        <!-- Acousticness Graph-->
+        <div class='tableauPlaceholder' id='viz1627164008349' style='position: relative'>
+          <noscript>
+            <a href='#'>
+              <img alt='Acousticness '
+              src='https:&#47;&#47;
+              public.tableau.com&#47;static&#47;
+              images&#47;Ac&#47;
+              Acousticness_16251917974040&#47;
+              Acousticness&#47;1_rss.png'
+              style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='Acousticness_16251917974040&#47;Acousticness' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;
             &#47;public.tableau.com&#47;
-            static&#47;
-            images&#47;
+            static&#47;images&#47;
             Ac&#47;
             Acousticness_16251917974040&#47;
-            Instrumentalness&#47;1_rss.png'
-            style='border: none' />
-          </a>
-      </noscript>
-      <object class='tableauViz'  style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='Acousticness_16251917974040&#47;Instrumentalness' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image' value='https:&#47;
-          &#47;public.tableau.com&#47;
-          static&#47;
-          images&#47;
-          Ac&#47;
-          Acousticness_16251917974040&#47;
-          Instrumentalness&#47;1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en-US' />
-        <param name='filter' value='publish=yes' />
-      </object>
+            Acousticness&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+            <param name='filter' value='publish=yes' />
+          </object>
+        </div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1627164008349');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width='100%';
+          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
+      <div class="Col">
+        <div class="Description">
+          <p>Description of acousticness</p>
+        </div>
+      </div>
     </div>
-    <script type='text/javascript'>
-      var divElement = document.getElementById('viz1627169611230');
-      var vizElement = divElement.getElementsByTagName('object')[0];
-      vizElement.style.width='100%';
-      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-      var scriptElement = document.createElement('script');
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
 
-    <!-- Liveness Graph-->
-    <div class='tableauPlaceholder' id='viz1627169819722' style='position: relative'>
-      <noscript>
-        <a href='#'>
-          <img alt='Liveness ' src='https:&#47;
-          &#47;public.tableau.com&#47;
-          static&#47;
-          images&#47;
-          Ac&#47;
-          Acousticness_16251917974040&#47;
-          Liveness&#47;1_rss.png' style='border: none' />
-        </a>
-      </noscript>
-      <object class='tableauViz'  style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='Acousticness_16251917974040&#47;Liveness' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image'
-          value='https:&#47;&#47;
-          public.tableau.com&#47;
-          static&#47;
-          images&#47;
-          Ac&#47;
-          Acousticness_16251917974040&#47;Liveness&#47;1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en-US' />
-        <param name='filter' value='publish=yes' />
-      </object>
+    <!-- DANCEABILITY-->
+    <div class="Definition">
+      <span class="Attributes">Danceability</span> <br>
+      <span>Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo,
+        rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.</span>
     </div>
-    <script type='text/javascript'>
-      var divElement = document.getElementById('viz1627169819722');
-      var vizElement = divElement.getElementsByTagName('object')[0];
-      vizElement.style.width='100%';
-      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-      var scriptElement = document.createElement('script');
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
 
-    <!-- Valence Graph-->
-    <div class='tableauPlaceholder' id='viz1627169977682' style='position: relative'>
-      <noscript>
-        <a href='#'>
-          <img alt='Valence '
-            src='https:&#47;&#47;
+    <div class="Row">
+      <div class="Col">
+        <div class="Description">
+          <p>Description of danceability</p>
+        </div>
+      </div>
+      <div class="Col">
+        <!-- Danceability Graph-->
+        <div class='tableauPlaceholder' id='viz1627164225706' style='position: relative'>
+          <noscript>
+            <a href='#'>
+              <img alt='Danceability '
+              src='https:&#47;
+              &#47;
+              public.tableau.com&#47;
+              static&#47;
+              images&#47;
+              Ac&#47;
+              Acousticness_16251917974040&#47;
+              Danceability&#47;1_rss.png' style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='Acousticness_16251917974040&#47;Danceability' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;
             public.tableau.com&#47;
             static&#47;
             images&#47;
             Ac&#47;
             Acousticness_16251917974040&#47;
-            Valence&#47;1_rss.png' style='border: none' />
-        </a>
-      </noscript>
-      <object class='tableauViz'  style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='Acousticness_16251917974040&#47;Valence' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image'
-          value='https:&#47;&#47;
-          public.tableau.com&#47;
-          static&#47;
-          images&#47;
-          Ac&#47;
-          Acousticness_16251917974040&#47;Valence&#47;1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en-US' />
-        <param name='filter' value='publish=yes' />
-      </object>
+            Danceability&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+            <param name='filter' value='publish=yes' />
+          </object>
+        </div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1627164225706');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width='100%';
+          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
     </div>
-    <script type='text/javascript'>
-      var divElement = document.getElementById('viz1627169977682');
-      var vizElement = divElement.getElementsByTagName('object')[0];
-      vizElement.style.width='100%';
-      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-      var scriptElement = document.createElement('script');
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
 
-    <!-- Speechiness Graph-->
-    <div class='tableauPlaceholder' id='viz1627170233066' style='position: relative'>
-      <noscript>
-        <a href='#'>
-          <img alt='Speechiness '
-            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ac&#47;Acousticness_16251917974040&#47;Speechiness&#47;1_rss.png'
-            style='border: none' />
-        </a>
-      </noscript>
-      <object class='tableauViz'  style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='Acousticness_16251917974040&#47;Speechiness' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image'
-          value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ac&#47;Acousticness_16251917974040&#47;Speechiness&#47;1.png'/>
+    <!-- DURATION -->
+    <div class="Definition">
+      <span class="Attributes">Duration</span> <br>
+      <span>The duration of the track in milliseconds.</span>
+    </div>
+
+    <div class="Row">
+      <div class="Col">
+        <!-- Duration Graph-->
+        <div class='tableauPlaceholder' id='viz1627164406608' style='position: relative'>
+          <noscript>
+            <a href='#'>
+              <img alt='Duration '
+                src='https:&#47;
+                &#47;
+                public.tableau.com&#47;
+                static&#47;
+                images&#47;
+                Ac&#47;
+                Acousticness_16251917974040&#47;
+                Duration&#47;1_rss.png' style='border: none' />
+              </a>
+        </noscript>
+        <object class='tableauViz'  style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='Acousticness_16251917974040&#47;Duration' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https:&#47;&#47;
+            public.tableau.com&#47;
+            static&#47;
+            images&#47;
+            Ac&#47;
+            Acousticness_16251917974040&#47;
+            Duration&#47;1.png' />
           <param name='animate_transition' value='yes' />
           <param name='display_static_image' value='yes' />
           <param name='display_spinner' value='yes' />
@@ -383,53 +351,439 @@
           <param name='language' value='en-US' />
           <param name='filter' value='publish=yes' />
         </object>
+        </div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1627164406608');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width='100%';
+          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
       </div>
-      <script type='text/javascript'>
-        var divElement = document.getElementById('viz1627170233066');
-        var vizElement = divElement.getElementsByTagName('object')[0];
-        vizElement.style.width='100%';
-        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-        var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-      </script>
-
-    <!-- Tempo Graph-->
-    <div class='tableauPlaceholder' id='viz1627170109731' style='position: relative'>
-      <noscript>
-        <a href='#'>
-          <img alt='Tempo '
-            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ac&#47;Acousticness_16251917974040&#47;Tempo&#47;1_rss.png'
-            style='border: none' />
-        </a>
-      </noscript>
-      <object class='tableauViz'  style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='Acousticness_16251917974040&#47;Tempo' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image'
-          value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ac&#47;Acousticness_16251917974040&#47;Tempo&#47;1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en-US' />
-        <param name='filter' value='publish=yes' />
-      </object>
+      <div class="Col">
+        <div class="Description">
+          <p>Description of duration</p>
+        </div>
+      </div>
     </div>
-    <script type='text/javascript'>
-      var divElement = document.getElementById('viz1627170109731');
-      var vizElement = divElement.getElementsByTagName('object')[0];
-      vizElement.style.width='100%';
-      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-      var scriptElement = document.createElement('script');
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
+
+    <!-- ENERGY -->
+    <div class="Definition">
+      <span class="Attributes">Energy</span> <br>
+      <span>Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic
+        tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale.
+        Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and
+        general entropy.</span>
+    </div>
+
+    <div class="Row">
+      <div class="Col">
+        <div class="Description">
+          <p>Description of danceability</p>
+        </div>
+      </div>
+      <div class="Col">
+        <!-- Energy Graph-->
+        <div class='tableauPlaceholder' id='viz1627164610769' style='position: relative'>
+          <noscript>
+            <a href='#'>
+              <img alt='Energy ' src='https:&#47;
+              &#47;
+              public.tableau.com&#47;
+              static&#47;
+              images&#47;
+              Ac&#47;
+              Acousticness_16251917974040&#47;
+              Energy&#47;1_rss.png' style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='Acousticness_16251917974040&#47;Energy' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;
+              &#47;public.tableau.com&#47;
+              static&#47;
+              images&#47;
+              Ac&#47;
+              Acousticness_16251917974040&#47;
+              Energy&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+            <param name='filter' value='publish=yes' />
+          </object>
+        </div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1627164610769');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width='100%';
+          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
+    </div>
+
+    <!-- INSTRUMENTALNESS -->
+    <div class="Definition">
+      <span class="Attributes">Instrumentalness</span> <br>
+      <span>Predicts whether a track contains no vocals. “Ooh” and “aah” sounds are treated as instrumental in this context.
+        Rap or spoken word tracks are clearly “vocal”. The closer the instrumentalness value is to 1.0, the greater likelihood the
+        track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as
+        the value approaches 1.0.</span>
+    </div>
+
+    <div class="Row">
+      <div class="Col">
+        <!-- Instrumentalness Graph-->
+        <div class='tableauPlaceholder' id='viz1627169611230' style='position: relative'>
+          <noscript>
+            <a href='#'>
+              <img alt='Instrumentalness ' src='https:&#47;
+                &#47;public.tableau.com&#47;
+                static&#47;
+                images&#47;
+                Ac&#47;
+                Acousticness_16251917974040&#47;
+                Instrumentalness&#47;1_rss.png'
+                style='border: none' />
+              </a>
+          </noscript>
+          <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='Acousticness_16251917974040&#47;Instrumentalness' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;
+              &#47;public.tableau.com&#47;
+              static&#47;
+              images&#47;
+              Ac&#47;
+              Acousticness_16251917974040&#47;
+              Instrumentalness&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+            <param name='filter' value='publish=yes' />
+          </object>
+        </div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1627169611230');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width='100%';
+          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
+      <div class="Col">
+        <div class="Description">
+          <p>Description of duration</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- LIVENESS -->
+    <div class="Definition">
+      <span class="Attributes">Liveness</span> <br>
+      <span>Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the
+        track was performed live. A value above 0.8 provides strong likelihood that the track is live.</span>
+    </div>
+
+    <div class="Row">
+      <div class="Col">
+        <div class="Description">
+          <p>Description of danceability</p>
+        </div>
+      </div>
+      <div class="Col">
+        <!-- Liveness Graph-->
+        <div class='tableauPlaceholder' id='viz1627169819722' style='position: relative'>
+          <noscript>
+            <a href='#'>
+              <img alt='Liveness ' src='https:&#47;
+              &#47;public.tableau.com&#47;
+              static&#47;
+              images&#47;
+              Ac&#47;
+              Acousticness_16251917974040&#47;
+              Liveness&#47;1_rss.png' style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='Acousticness_16251917974040&#47;Liveness' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https:&#47;&#47;
+              public.tableau.com&#47;
+              static&#47;
+              images&#47;
+              Ac&#47;
+              Acousticness_16251917974040&#47;Liveness&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+            <param name='filter' value='publish=yes' />
+          </object>
+        </div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1627169819722');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width='100%';
+          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
+    </div>
+
+    <!-- MODE -->
+    <div class="Definition">
+      <span class="Attributes">Mode</span> <br>
+      <span>Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived.
+        Major is represented by 1 and minor is 0.</span>
+    </div>
+
+    <div class="Row">
+      <div class="Col">
+        <!-- Mode Graph-->
+        <div class='tableauPlaceholder' id='viz1627316713432' style='position: relative'>
+          <noscript>
+            <a href='#'>
+              <img alt='Mode '
+              src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ac&#47;Acousticness_16251917974040&#47;Mode&#47;1_rss.png'
+              style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='Acousticness_16251917974040&#47;Mode' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ac&#47;Acousticness_16251917974040&#47;Mode&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+            <param name='filter' value='publish=yes' />
+          </object>
+        </div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1627316713432');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width='100%';
+          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
+      <div class="Col">
+        <div class="Description">
+          <p>Description of mode</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="Definition">
+      <span class="Attributes">Speechiness</span> <br>
+      <span>Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording
+        (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. Values above 0.66 describe tracks that are
+        probably made entirely of spoken words. Values between 0.33 and 0.66 describe tracks that may contain both music and speech,
+        either in sections or layered, including such cases as rap music. Values below 0.33 most likely represent music and other
+        non-speech-like tracks.</span>
+    </div>
+
+    <div class="Row">
+      <div class="Col">
+        <div class="Description">
+          <p>Description of danceability</p>
+        </div>
+      </div>
+      <div class="Col">
+        <!-- Speechiness Graph-->
+        <div class='tableauPlaceholder' id='viz1627170233066' style='position: relative'>
+          <noscript>
+            <a href='#'>
+              <img alt='Speechiness '
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ac&#47;Acousticness_16251917974040&#47;Speechiness&#47;1_rss.png'
+                style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='Acousticness_16251917974040&#47;Speechiness' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ac&#47;Acousticness_16251917974040&#47;Speechiness&#47;1.png'/>
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' />
+              <param name='language' value='en-US' />
+              <param name='filter' value='publish=yes' />
+          </object>
+        </div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1627170233066');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width='100%';
+          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
+    </div>
+
+    <!-- TEMPO -->
+    <div class="Definition">
+      <span class="Attributes">Tempo</span> <br>
+      <span>The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a
+        given piece and derives directly from the average beat duration.</span>
+    </div>
+
+    <div class="Row">
+      <div class="Col">
+        <!-- Tempo Graph-->
+        <div class='tableauPlaceholder' id='viz1627170109731' style='position: relative'>
+          <noscript>
+            <a href='#'>
+              <img alt='Tempo '
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ac&#47;Acousticness_16251917974040&#47;Tempo&#47;1_rss.png'
+                style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='Acousticness_16251917974040&#47;Tempo' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ac&#47;Acousticness_16251917974040&#47;Tempo&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+            <param name='filter' value='publish=yes' />
+          </object>
+        </div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1627170109731');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width='100%';
+          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
+      <div class="Col">
+        <div class="Description">
+          <p>Description of mode</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- VALENCE -->
+    <div class="Definition">
+      <span class="Attributes">Valence</span> <br>
+      <span>A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more
+        positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).</span>
+    </div>
+
+    <div class="Row">
+      <div class="Col">
+        <div class="Description">
+          <p>Description of danceability</p>
+        </div>
+      </div>
+      <div class="Col">
+        <!-- Valence Graph-->
+        <div class='tableauPlaceholder' id='viz1627169977682' style='position: relative'>
+          <noscript>
+            <a href='#'>
+              <img alt='Valence '
+                src='https:&#47;&#47;
+                public.tableau.com&#47;
+                static&#47;
+                images&#47;
+                Ac&#47;
+                Acousticness_16251917974040&#47;
+                Valence&#47;1_rss.png' style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='Acousticness_16251917974040&#47;Valence' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https:&#47;&#47;
+              public.tableau.com&#47;
+              static&#47;
+              images&#47;
+              Ac&#47;
+              Acousticness_16251917974040&#47;Valence&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+            <param name='filter' value='publish=yes' />
+          </object>
+        </div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1627169977682');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width='100%';
+          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
+    </div>
 
     <div class="Footer">
       <p> Copyright &copy;

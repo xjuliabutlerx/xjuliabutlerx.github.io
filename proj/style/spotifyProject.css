@@ -105,6 +105,55 @@ Metallic Sunburst - #9B7E46 (gold)
   color: #9B7E46;
 }
 
+.Sources {
+  font-family: "Avenir Next";
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+}
+
+.Sources {
+  font-size: 16px;
+}
+
+.Definition {
+  font-family: "Avenir Next";
+  color: #000000;
+  font-size: 18px;
+}
+
+.Attributes {
+  font-family: "Courier";
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Col {
+  float: left;
+  width: 50%;
+}
+
+.Row {
+  margin-bottom: 20px;
+}
+
+.Row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tableauPlaceholder p {
+  align-content: center;
+}
+
+.Description {
+  font-family: "Avenir Next";
+  color: #000000;
+  font-size: 18px;
+}
+
 .Footer {
   background-color: #E0E0E2;
   text-align: center;

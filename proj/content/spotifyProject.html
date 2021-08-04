@@ -36,8 +36,7 @@
 
       <p>In this data analysis project, I explore generation-defining music and attempt to use Spotify audio features to figure out what
         musical attributes are most appealing to each generation. However, as a violinist and music fan myself, I understand that
-        numbers simply cannot quantify every characteristic in existence—especially when it comes to something as subjective as music.
-        That being said, take these results with a grain of salt.</p>
+        numbers simply cannot quantify every characteristic in existence—especially when it comes to something as subjective as music.</p>
 
       <p><b>Research and Sampling Methods</b> <br>
         Before beginning data collection, I firstly defined the generations being analyzed. For this project, I am going to explore
@@ -158,8 +157,9 @@
         <span class="Attributes">Speechiness</span>,
         <span class="Attributes">Tempo</span>,
         <span class="Attributes">Time Signature</span>, and
-        <span class="Attributes">Valence</span>.
-        While most of these attributes measure a specific characteristic of music, a couple of them do overlap. For instance,
+        <span class="Attributes">Valence</span>.</p>
+
+      <p>While most of these attributes measure a specific characteristic of music, a couple of them do overlap. For instance,
         <span class="Attributes">Mode</span> and <span class="Attributes">Key</span> both measure types of key signatures.
         <span class="Attributes">Key</span> is more specific whereas <span class="Attributes">Mode</span> is either major or minor.
         Since it has been proven that people generally like songs in major keys rather than minor keys, I decided to only analyze
@@ -231,7 +231,7 @@
           var divElement = document.getElementById('viz1627164008349');
           var vizElement = divElement.getElementsByTagName('object')[0];
           vizElement.style.width='100%';
-          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          vizElement.style.height=(divElement.offsetWidth*0.8)+'px';
           var scriptElement = document.createElement('script');
           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -239,7 +239,19 @@
       </div>
       <div class="Col">
         <div class="Description">
-          <p>Description of acousticness</p>
+          <p>As demonstrated by the graph, Baby Boomer music has significantly higher acousticness (or the least amount of electric
+            amplification) than any other generation. While this may not be a surprise, it was shocking to discover that Generation Z
+            music had the second-highest score for acousticness. However, the acousticness score for Generation Z is not statistically
+            greater than Millennials or Generation X. In other words, music enjoyed by Generation Z, Millennials, and Generation X
+            generally have a similar level of acousticness.</p>
+
+          <p>There were 4 songs from the Baby Boomer music that had acousticness scores of 0.944: <em>All Down The Line</em> by
+            The Rolling Stones, <em>Exodus (Single Version)</em> by Bob Marley & the Wailers, <em>Salsation</em> from the
+            Saturday Night Fever (The Original Movie Soundtrack) album, and <em>Going to California (Guitar/Mandolin Version)</em>
+            by Led Zeppelin. On the other hand, every artist from Generation X music has 1 song with a miniscule 3.69e-06
+            acousticness score. However, out of all the songs I analyzed, the highest acousticness score was a 0.947 shared by two songs
+            from Generation Z. Those songs are <em>Die4Guy</em> by Taylor Swift and <em>Don’t Matter To Me</em> by Drake (featuring
+            Michael Jackson's vocal recordings from a session in 1983).</p>
         </div>
       </div>
     </div>
@@ -254,7 +266,11 @@
     <div class="Row">
       <div class="Col">
         <div class="Description">
-          <p>Description of danceability</p>
+          <p>All four generations appear to have relatively similar danceability scores, but Millennial music has the greatest on
+            average. Next, Generation X and Z both have comparable danceability and do not differ significantly from each other.
+            However, Baby Boomer music has a statistically lower danceability rating from all of the other generations. </p>
+
+          <p>From the Millennial music, every artist except Christina Aguilera had 1 song with a maximum danceability score of 0.905.</p>
         </div>
       </div>
       <div class="Col">

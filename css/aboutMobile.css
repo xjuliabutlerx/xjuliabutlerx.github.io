@@ -33,24 +33,21 @@ h1 {
   font-size: 5px;
 }
 
-@media only screen and (max-width: 629px) {
-  .Left {
-    margin-top: 10px;
-    width: 100%;
-    float: none;
-    text-align: center;
-  }
+.Left {
+  margin-top: 10px;
+  width: 100%;
+  float: none;
+  text-align: center;
+}
 
-  .Left Portrait {
-    margin-top: 10px;
-    width: 50%;
-  }
+.Left Portrait {
+  margin-top: 10px;
+  width: 50%;
+}
 
-  .Right {
-    width: 100%;
-    float: none;
-  }
-
+.Right {
+  width: 100%;
+  float: none;
 }
 
 .Left h1 {

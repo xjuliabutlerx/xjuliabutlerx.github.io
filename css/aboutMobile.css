@@ -41,6 +41,11 @@ h1 {
     text-align: center;
   }
 
+  .Left Portrait {
+    margin-top: 10px;
+    width: 50%;
+  }
+
   .Right {
     width: 100%;
     float: none;
@@ -50,11 +55,6 @@ h1 {
 
 .Left h1 {
   font-size: 5px;
-}
-
-.Left Portrait {
-  margin-top: 10px;
-  width: 50%;
 }
 
 .Right p {

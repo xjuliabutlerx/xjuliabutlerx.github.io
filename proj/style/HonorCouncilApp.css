@@ -90,9 +90,14 @@ Metallic Sunburst - #9B7E46 (gold)
   font-style: italic;
 }
 
+.Video {
+  margin: 0 auto;
+  text-align: center;
+}
+
 #Preview {
   text-align: center;
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 

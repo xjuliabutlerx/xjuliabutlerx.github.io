@@ -179,7 +179,8 @@
 
       <p>The analysis portion of this project took place in R. I learned about R in my MATH 352 Statistical Data Analysis course.
         I used the CSV files and imported them into the R workspace to run Welch Two Sample t-tests in which the variances are not
-        equal. All of my tests can be found on my GitHub repository.</p>
+        equal and Pearson's Product-Moment Correlation tests in which the alternative hypothesis was greater (for positive correlation).
+        All of my tests were performed with <span id="alpha">&alpha;</span> = 0.05 and can be found on my GitHub repository.</p>
     </div>
 
     <!-- ACOUSTICNESS -->
@@ -268,7 +269,7 @@
         <div class="Description">
           <p>All four generations appear to have relatively similar danceability scores, but Millennial music has the greatest on
             average. Next, Generation X and Z both have comparable danceability and do not differ significantly from each other.
-            However, Baby Boomer music has a statistically lower danceability rating from all of the other generations. </p>
+            However, Baby Boomer music has a statistically lower danceability rating than all of the other generations. </p>
 
           <p>From the Millennial music, every artist except Christina Aguilera had 1 song with a maximum danceability score of 0.905.</p>
         </div>
@@ -801,6 +802,22 @@
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
       </div>
+    </div>
+
+    <div class="Questions">
+      <p><br><b>Other Insights</b> <br>
+        Going into this project, I also had other questions about music that I wanted to look into. Specifically, I wanted to test some
+        of my hypotheses about the relationships between some of the track attributes.</p>
+
+      <p><em>1. It is commonly believed that songs written in minor keys are more likely to be gloomy or sad. Since Spotify has a
+          track attribute called "valence" that is supposed to measure the "positiveness" of a track, I though this would be an
+          appropriate measure to use in relation to mode (major or minor) to test this theory.</em></p>
+
+      <p>As it turns out, for the Baby Boomer music, this hypotheses generally holds true; major key songs are generally more positive
+        than minor songs. However, the p-value is only 0.04987 which isn't much smaller than <span id="alpha">&alpha;</span> = 0.05.
+        The correlation coefficient is only 0.1387.</p>
+
+      <p></p>
     </div>
 
     <div class="Footer">

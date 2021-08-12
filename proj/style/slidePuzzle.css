@@ -51,6 +51,10 @@ Metallic Sunburst - #9B7E46 (gold)
   color: #0E1116;
 }
 
+.Back a:visited {
+  color #000000;
+}
+
 .Back a:hover {
   font-family: "Avenir Next";
   color: #9B7E46;
@@ -58,16 +62,6 @@ Metallic Sunburst - #9B7E46 (gold)
 
 .Project_Introduction {
   align-content: left;
-  /*padding-top: 70px;*/
-  /*padding-bottom: 70px;*/
-  /* height: 200px; This was originally 4000px */
-  /*
-  Commentting out the picture because it's not working quite right
-  background-image: url("../img/Crim_Dell.JPG");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  */
 }
 
 .Project_Introduction h1 {
@@ -88,7 +82,24 @@ Metallic Sunburst - #9B7E46 (gold)
   text-align: left;
 }
 
-.Project_Body {
+.Project_Introduction a {
+  font-size: 18px;
+  font-family: "Avenir Next";
+  text-align: left;
+  color: #000000;
+}
+
+.Project_Introduction a:visited {
+  font-family: "Avenir Next";
+  color: #000000;
+}
+
+.Project_Introduction a:hover {
+  font-family: "Avenir Next";
+  color: #9B7E46;
+}
+
+.Project_Description {
   font-size: 18px;
   font-family: "Avenir Next";
   text-align: left;

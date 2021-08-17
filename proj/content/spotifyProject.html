@@ -58,7 +58,10 @@
         of time. It is also reasonable to assume that albums include at least 5 to 8 songs, generating a sample of 50 to 80 songs per
         generation.</p>
 
-      <p>Below is a table of the albums that I explored and sources for each of these lists are linked in their respective column
+      <p>Altogether, I explored 601 songs with 142 from the Baby Boomer generation, 200 from Generation X, 110 from Millennials,
+        and 149 from Generation Z.</p>
+
+      <p>Below is a table of the albums that I analyzed and sources for each of these lists are linked in their respective column
         headers:</p>
 
       <table class="Sources">
@@ -166,10 +169,13 @@
         <span class="Attributes">Mode</span>. Another example is <span class="Attributes">Tempo</span> and
         <span class="Attributes">Time Signature</span>. <span class="Attributes">Time Signature</span> specifies the number of
         beats in a measure, but <span class="Attributes">Tempo</span> specifies how fast those beats are played. As a result,
-        I decided to only analyze <span class="Attributes">Tempo</span>. Lastly, the final attribute I decided to not include
-        in this project is <span class="Attributes">Loudness</span>. The reason being is because as a violinist, I was taught
-        that loudness does not impact whether or not music is good; the quality of music is dependent on other variables,
-        which are better demonstrated by the other attributes. The remaining 10 attributes are defined in my findings.</p>
+        I decided to only analyze <span class="Attributes">Tempo</span>. I also decided to not look into <span class="Attributes">
+        Liveness</span> since this attribute evaluates the presence of an audience in a track. I personally did not want to look
+        into this and also because all of my tracks have been produced or re-produced in a studio with no audience. Lastly, the
+        final attribute I decided to not include in this project is <span class="Attributes">Loudness</span>. The reason being is
+        because as a violinist, I was taught that loudness does not impact whether or not music is good; the quality of music is
+        dependent on other variables, which are better demonstrated by the other attributes. The remaining 10 attributes are defined
+        in my findings.</p>
 
       <p>Next, I wrote some Python code that gathered all of these songs, their respective track
         attributes, and printed them in the console for me to transfer to CSV files for each generation. Of course, before
@@ -180,7 +186,9 @@
       <p>The analysis portion of this project took place in R. I learned about R in my MATH 352 Statistical Data Analysis course.
         I used the CSV files and imported them into the R workspace to run Welch Two Sample t-tests in which the variances are not
         equal and Pearson's Product-Moment Correlation tests in which the alternative hypothesis was greater (for positive correlation).
-        All of my tests were performed with <span id="alpha">&alpha;</span> = 0.05 and can be found on my GitHub repository.</p>
+        All of my tests were performed with <span id="alpha">&alpha;</span> = 0.05 and can be found on my GitHub repository. Lastly,
+        while I do point out specific minimums, maximums, etc. in my findings, I am not going to list all of the songs with those
+        scores since many songs have the same or similar ratings.</p>
     </div>
 
     <!-- ACOUSTICNESS -->
@@ -232,7 +240,7 @@
           var divElement = document.getElementById('viz1627164008349');
           var vizElement = divElement.getElementsByTagName('object')[0];
           vizElement.style.width='100%';
-          vizElement.style.height=(divElement.offsetWidth*0.8)+'px';
+          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
           var scriptElement = document.createElement('script');
           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -246,13 +254,11 @@
             greater than Millennials or Generation X. In other words, music enjoyed by Generation Z, Millennials, and Generation X
             generally have a similar level of acousticness.</p>
 
-          <p>There were 4 songs from the Baby Boomer music that had acousticness scores of 0.944: <em>All Down The Line</em> by
-            The Rolling Stones, <em>Exodus (Single Version)</em> by Bob Marley & the Wailers, <em>Salsation</em> from the
-            Saturday Night Fever (The Original Movie Soundtrack) album, and <em>Going to California (Guitar/Mandolin Version)</em>
-            by Led Zeppelin. On the other hand, every artist from Generation X music has 1 song with a miniscule 3.69e-06
-            acousticness score. However, out of all the songs I analyzed, the highest acousticness score was a 0.947 shared by two songs
-            from Generation Z. Those songs are <em>Die4Guy</em> by Taylor Swift and <em>Don’t Matter To Me</em> by Drake (featuring
-            Michael Jackson's vocal recordings from a session in 1983).</p>
+          <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
+            Minimum: 3.69e-06 (There are 10 songs with this acousticness rating) <br>
+            Maximum: 0.947 (2)<br>
+            Average: 0.2760703 (0) <br>
+            Median: 0.159 (9)</p>
         </div>
       </div>
     </div>
@@ -271,7 +277,11 @@
             average. Next, Generation X and Z both have comparable danceability and do not differ significantly from each other.
             However, Baby Boomer music has a statistically lower danceability rating than all of the other generations. </p>
 
-          <p>From the Millennial music, every artist except Christina Aguilera had 1 song with a maximum danceability score of 0.905.</p>
+          <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
+            Minimum: 0.25 (4) <br>
+            Maximum: 0.905 (9) <br>
+            Average: 0.5448869 (0) <br>
+            Median: 0.504 (10)</p>
         </div>
       </div>
       <div class="Col">
@@ -383,7 +393,17 @@
       </div>
       <div class="Col">
         <div class="Description">
-          <p>Description of duration</p>
+          <p>As depicted in the graph, there appears to be 2 generations with lengthier music and 2 generations with shorter
+            music. On average, Generation Z tends to have longer songs than all the other generations, with an average of 5.1
+            minutes. Baby Boomers have songs with an average of 4.6 minutes, but this is statistically lower than Generation Z's
+            music. Millennials and Generation X both have similar length songs with average durations of 3.7 minutes and
+            3.6 minutes respectively.</p>
+
+          <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
+            Minimum: 62253 or 1.03 minutes (10) <br>
+            Maximum: 681400 or 11.3 minutes (10) <br>
+            Average: 256287.8 or 4.2 minutes (0) <br>
+            Median: 230933 or 3.8 minutes (9)</p>
         </div>
       </div>
     </div>
@@ -400,7 +420,15 @@
     <div class="Row">
       <div class="Col">
         <div class="Description">
-          <p>Description of danceability</p>
+          <p>Similar to the Danceability averages graph, the generations tend to be grouped. As for Energy, Millennials and Generation
+            X have similar ratings on average. Generation Z and Baby Boomers both tend to be lower than these two generations, but are
+            both similar to each other.</p>
+
+          <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
+            Minimum: 0.000581 (1) <br>
+            Maximum: 0.981 (10) <br>
+            Average: 0.6825534 (0) <br>
+            Median: 0.72 (10)</p>
         </div>
       </div>
       <div class="Col">
@@ -513,70 +541,17 @@
       </div>
       <div class="Col">
         <div class="Description">
-          <p>Description of duration</p>
-        </div>
-      </div>
-    </div>
+          <p>Despite the stark contrasts between each of the four generations' averages for instrumentalness, Generation X and Z
+            are not statistically distinct from one another. They both have relatively similar instrumentalness ratings on average.
+            However, Baby Boomers have a significantly lower instrumentalness score and Millennial music even more so. In short,
+            Generation X and Z are similar in terms of instrumentalness, but Baby Boomers come in third and Millennials in fourth.</p>
 
-    <!-- LIVENESS -->
-    <div class="Definition">
-      <span class="Attributes">Liveness</span> <br>
-      <span>Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the
-        track was performed live. A value above 0.8 provides strong likelihood that the track is live.</span>
-    </div>
-
-    <div class="Row">
-      <div class="Col">
-        <div class="Description">
-          <p>Description of danceability</p>
+          <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
+            Minimum: 0 (210) <br>
+            Maximum: 0.855 (1) <br>
+            Average: 0.04281101 (0) <br>
+            Median: 1.77e-05 (10)</p>
         </div>
-      </div>
-      <div class="Col">
-        <!-- Liveness Graph-->
-        <div class='tableauPlaceholder' id='viz1627169819722' style='position: relative'>
-          <noscript>
-            <a href='#'>
-              <img alt='Liveness ' src='https:&#47;
-              &#47;public.tableau.com&#47;
-              static&#47;
-              images&#47;
-              Ac&#47;
-              Acousticness_16251917974040&#47;
-              Liveness&#47;1_rss.png' style='border: none' />
-            </a>
-          </noscript>
-          <object class='tableauViz'  style='display:none;'>
-            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-            <param name='embed_code_version' value='3' />
-            <param name='site_root' value='' />
-            <param name='name' value='Acousticness_16251917974040&#47;Liveness' />
-            <param name='tabs' value='no' />
-            <param name='toolbar' value='yes' />
-            <param name='static_image'
-              value='https:&#47;&#47;
-              public.tableau.com&#47;
-              static&#47;
-              images&#47;
-              Ac&#47;
-              Acousticness_16251917974040&#47;Liveness&#47;1.png' />
-            <param name='animate_transition' value='yes' />
-            <param name='display_static_image' value='yes' />
-            <param name='display_spinner' value='yes' />
-            <param name='display_overlay' value='yes' />
-            <param name='display_count' value='yes' />
-            <param name='language' value='en-US' />
-            <param name='filter' value='publish=yes' />
-          </object>
-        </div>
-        <script type='text/javascript'>
-          var divElement = document.getElementById('viz1627169819722');
-          var vizElement = divElement.getElementsByTagName('object')[0];
-          vizElement.style.width='100%';
-          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
-          var scriptElement = document.createElement('script');
-          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-          vizElement.parentNode.insertBefore(scriptElement, vizElement);
-        </script>
       </div>
     </div>
 
@@ -588,6 +563,20 @@
     </div>
 
     <div class="Row">
+      <div class="Col">
+        <div class="Description">
+          <p>The averages represented in this graph indicate the proportion of songs written in a major key. That being said, it
+            is evident that there each generation is in its own distinct group as far as mode goes. Baby Boomers have the highest
+            proportion of songs written in a major key; far more than the other three generations. Millennials come in second,
+            Generation X in third, and Generation Z in fourth.</p>
+
+            <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
+              Minimum: 0 (231) <br>
+              Maximum: 1 (370) <br>
+              Average: 0.6156406 (0) <br>
+              Median: 1 (370)</p>
+        </div>
+      </div>
       <div class="Col">
         <!-- Mode Graph-->
         <div class='tableauPlaceholder' id='viz1627316713432' style='position: relative'>
@@ -626,11 +615,6 @@
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
       </div>
-      <div class="Col">
-        <div class="Description">
-          <p>Description of mode</p>
-        </div>
-      </div>
     </div>
 
     <div class="Definition">
@@ -643,11 +627,6 @@
     </div>
 
     <div class="Row">
-      <div class="Col">
-        <div class="Description">
-          <p>Description of danceability</p>
-        </div>
-      </div>
       <div class="Col">
         <!-- Speechiness Graph-->
         <div class='tableauPlaceholder' id='viz1627170233066' style='position: relative'>
@@ -686,6 +665,19 @@
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
       </div>
+      <div class="Col">
+        <div class="Description">
+          <p>Although not as clear as in the Mode averages graph, the 4 generations each have distinct Speechiness averages.
+            Generation Z has the largest Speechiness average, followed by Generation X, Millennials, and last but not least,
+            Baby Boomers.</p>
+
+            <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
+              Minimum: 0.0254 (1) <br>
+              Maximum: 0.438 (2) <br>
+              Average: 0.08270416 (0) <br>
+              Median: 0.0564 (19)</p>
+        </div>
+      </div>
     </div>
 
     <!-- TEMPO -->
@@ -696,6 +688,18 @@
     </div>
 
     <div class="Row">
+      <div class="Col">
+        <div class="Description">
+          <p>Again, this may not be clear from the chart, but each generation has distinct Tempo averages. Generation X clearly has
+            faster songs on average, followed by Generation Z, Millennials, and Baby Boomers.</p>
+
+          <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
+            Minimum: 65.09 (6) <br>
+            Maximum: 201.96 (1) <br>
+            Average: 118.4154 (0) <br>
+            Median: 116.166 (6)</p>
+        </div>
+      </div>
       <div class="Col">
         <!-- Tempo Graph-->
         <div class='tableauPlaceholder' id='viz1627170109731' style='position: relative'>
@@ -734,11 +738,6 @@
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
       </div>
-      <div class="Col">
-        <div class="Description">
-          <p>Description of mode</p>
-        </div>
-      </div>
     </div>
 
     <!-- VALENCE -->
@@ -749,11 +748,6 @@
     </div>
 
     <div class="Row">
-      <div class="Col">
-        <div class="Description">
-          <p>Description of danceability</p>
-        </div>
-      </div>
       <div class="Col">
         <!-- Valence Graph-->
         <div class='tableauPlaceholder' id='viz1627169977682' style='position: relative'>
@@ -801,6 +795,18 @@
           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
+      </div>
+      <div class="Col">
+        <div class="Description">
+          <p>As seen in previous graphs, the generations tend to be grouped with 2 generations having higher Valence scores and the
+            other 2 with lower Valence scores.</p>
+
+          <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
+            Minimum: 0.0498 (2) <br>
+            Maximum: 0.966 (8) <br>
+            Average: 0.4842872 (0) <br>
+            Median: 0.499 (12)</p>
+        </div>
       </div>
     </div>
 

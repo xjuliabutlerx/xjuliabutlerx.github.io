@@ -184,11 +184,11 @@
         at the top of the page.</p>
 
       <p>The analysis portion of this project took place in R. I learned about R in my MATH 352 Statistical Data Analysis course.
-        I used the CSV files and imported them into the R workspace to run Welch Two Sample t-tests in which the variances are not
-        equal and Pearson's Product-Moment Correlation tests in which the alternative hypothesis was greater (for positive correlation).
-        All of my tests were performed with <span id="alpha">&alpha;</span> = 0.05 and can be found on my GitHub repository. Lastly,
-        while I do point out specific minimums, maximums, etc. in my findings, I am not going to list all of the songs with those
-        scores since many songs have the same or similar ratings.</p>
+        I used the CSV files and imported them into the R workspace to run One Sample t-tests to find 95% confidence intervals,
+        Welch Two Sample t-tests in which the variances are not equal, and Pearson's Product-Moment Correlation tests with a variety
+        of alternative hypotheses (greater, less, and equal to 0). All of my tests were performed with <span id="alpha">&alpha;</span>
+        = 0.05 and can be found on my GitHub repository. Lastly, while I do point out specific minimums, maximums, etc. in my findings,
+        I am not going to list all of the songs with those scores since many songs have the same or similar ratings.</p>
     </div>
 
     <!-- ACOUSTICNESS -->
@@ -240,7 +240,7 @@
           var divElement = document.getElementById('viz1627164008349');
           var vizElement = divElement.getElementsByTagName('object')[0];
           vizElement.style.width='100%';
-          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          vizElement.style.height=(divElement.offsetWidth*0.4)+'px';
           var scriptElement = document.createElement('script');
           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -248,19 +248,28 @@
       </div>
       <div class="Col">
         <div class="Description">
-          <p>As demonstrated by the graph, Baby Boomer music has significantly higher acousticness (or the least amount of electric
-            amplification) than any other generation. While this may not be a surprise, it was shocking to discover that Generation Z
-            music had the second-highest score for acousticness. However, the acousticness score for Generation Z is not statistically
-            greater than Millennials or Generation X. In other words, music enjoyed by Generation Z, Millennials, and Generation X
-            generally have a similar level of acousticness.</p>
+          <p>95% confidence intervals:<br>
+            Baby Boomers (BB): 0.5007412 to 0.5839052<br>
+            Generation X (X): 0.1355868 to 0.2163487<br>
+            Millennials (M): 0.1566540 to 0.2242059<br>
+            Generation Z (Z): 0.1754778 to 0.2643547</p>
 
           <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
             Minimum: 3.69e-06 (There are 10 songs with this acousticness rating) <br>
             Maximum: 0.947 (2)<br>
             Average: 0.2760703 (0) <br>
             Median: 0.159 (9)</p>
+
         </div>
       </div>
+    </div>
+
+    <div class="Comment">
+      <p>As demonstrated by the graph, Baby Boomer music has significantly higher acousticness (or the least amount of electric
+        amplification) than any other generation. While this may not be a surprise, it was shocking to discover that Generation Z
+        music had the second-highest score for acousticness. However, the acousticness score for Generation Z is not statistically
+        greater than Millennials or Generation X. In other words, music enjoyed by Generation Z, Millennials, and Generation X
+        generally have a similar level of acousticness.</p>
     </div>
 
     <!-- DANCEABILITY-->
@@ -812,18 +821,50 @@
 
     <div class="Questions">
       <p><br><b>Other Insights</b> <br>
-        Going into this project, I also had other questions about music that I wanted to look into. Specifically, I wanted to test some
+        Going into this project, I also had a couple questions about music that I wanted to look into. Specifically, I wanted to test some
         of my hypotheses about the relationships between some of the track attributes.</p>
 
-      <p><em>1. It is commonly believed that songs written in minor keys are more likely to be gloomy or sad. Since Spotify has a
-          track attribute called "valence" that is supposed to measure the "positiveness" of a track, I though this would be an
-          appropriate measure to use in relation to mode (major or minor) to test this theory.</em></p>
+      <p><em>1. It is commonly believed that happier sounding songs tend to have faster tempos. Since Spotify has a track attribute called
+          "valence" that is supposed to measure the "positiveness" of a track, I though this would be an appropriate measure to use in
+          relation to tempo to test this theory.</em></p>
 
-      <p>As it turns out, for the Baby Boomer music, this hypotheses generally holds true; major key songs are generally more positive
-        than minor songs. However, the p-value is only 0.04987 which isn't much smaller than <span id="alpha">&alpha;</span> = 0.05.
-        The correlation coefficient is only 0.1387.</p>
+      <p>As it turns out, for the Baby Boomer music, this hypotheses generally holds true; upbeat songs are generally more positive
+        than slower songs. The p-value is only 0.0004119 which is much smaller than <span id="alpha">&alpha;</span> = 0.05.
+        However, despite this, the correlation coefficient is only 0.2775954, which only suggests low correlation.</p>
 
-      <p></p>
+      <p>On the other hand, Generation X music is the complete opposite and data suggests that slower songs are more positive than fast
+        songs. The p-value is 6.603e-07 which is significantly smaller than <span id="alpha">&alpha;</span> = 0.05. However, again, the
+        correlation coefficient is -0.3342114 and only infers low correlation.</p>
+
+      <p>Millennial music has a similar outcome as Generation X music. The p-value is 3.623e-05 which is also much smaller than
+        <span id="alpha">&alpha;</span> = 0.05 and the correlation coefficient is -0.3691063, suggesting low correlation. All in all,
+        more positive-sounding Millennial music tends to be slower.</p>
+
+      <p>As for Generation Z, there appears to be very little correlation between valence and tempo. The p-value is 0.3367 which is
+        not smaller than <span id="alpha">&alpha;</span> = 0.05, so I cannot conclude that valence and tempo are positively related.
+        Additionally, the correlation coefficient is 0.03481944 which again, implies that there is close to no relationship between
+        those two track attributes.</p>
+
+      <p><em>2. One reason why people love music is because they can dance to it. This common belief made me wonder if there is any
+        relationship between danceability and tempo and if so, fast or slow tempos.</em></p>
+
+      <p>For Baby Boomer music, as tempo increases, danceability decreases. When using the hypothesis that danceability and tempo
+        have an inverse relationship, the p-value is 0.002905 which is smaller than <span id="alpha">&alpha;</span> = 0.05.
+        The correlation coefficient, on the other hand, is only -0.2303871 which only suggests low correlation.</p>
+
+      <p>Generation X music shows a similar relationship. When using the same hypothesis, the p-value is 8.525e-08 and is much
+        less than <span id="alpha">&alpha;</span> = 0.05. The correlation coefficient also points to low correlation though, with r =
+        -0.3595551.</p>
+
+      <p>Millennial music also shows a similar relationship, but much stronger than the previous two generations. Again, using the
+        same hypothesis, the p-value is 1.108e-14 and is significantly smaller than <span id="alpha">&alpha;</span> = 0.05. The
+        correlation coefficient is also much stronger than the previous two, with r = -0.6470702, suggesting high correlation.</p>
+
+      <p>Lastly, Generation Z music displays little relationship between danceability and tempo. Using the basic hypothesis that
+        danceability and tempo have no relation, the p-value still ended up being 0.6336 which is not less than
+        <span id="alpha">&alpha;</span> = 0.05. Similarly, the correlation coefficient is -0.03936581, which suggests virtually
+        no relationship.</p>
+
     </div>
 
     <div class="Footer">

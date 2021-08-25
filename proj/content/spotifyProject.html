@@ -36,7 +36,7 @@
 
       <p>In this data analysis project, I explore generation-defining music and attempt to use Spotify audio features to figure out what
         musical attributes are most appealing to each generation. However, as a violinist and music fan myself, I understand that
-        numbers simply cannot quantify every characteristic in existence—especially when it comes to something as subjective as music.</p>
+        numbers simply cannot quantify every characteristic in existence — especially when it comes to something as subjective as music.</p>
 
       <p><b>Research and Sampling Methods</b> <br>
         Before beginning data collection, I firstly defined the generations being analyzed. For this project, I am going to explore
@@ -44,13 +44,13 @@
         (1997-2012). According to Google, these are the birth years generally considered for each generation.</p>
 
       <p>Next, I began to puruse popular music for each generation. (Note that "popular music" here does not necessarily mean pop music;
-        I am referring to music that each generation liked to listened to). Some of the articles that I found listed 10 songs that
-        were popular at the time for each generation. While I could have used songs as the basis for this project, my sample sizes
-        for each generation would have been miniscule. Also, it was hard to find top song lists that stretched an entire generation.
-        Additionally, 10 songs are not necessarily representative of a whole generation's worth of popular music. Another route for
-        collecting data could be selecting specific artists and using all of their music. Again, this would be a viable solution.
-        However, it would run the risk of including music enjoyed by a different generation (leading to overlap) or including an artist
-        that may have had a one hit wonder.</p>
+        I am referring to music that each generation liked to listened to and/or music that was popularized by a generation). Some of the
+        articles that I found listed 10 songs that were popular at the time for each generation. While I could have used songs as the
+        basis for this project, my sample sizes for each generation would have been miniscule. Also, it was hard to find top song lists
+        that stretched an entire generation. Additionally, 10 songs are not necessarily representative of a whole generation's worth of
+        popular music. Another route for collecting data could be selecting specific artists and using all of their music. Again, this
+        would be a viable solution. However, it would run the risk of including music enjoyed by a different generation (leading to overlap)
+        or including an artist that may have had a one hit wonder.</p>
 
       <p>After careful consideration, I eventually settled on finding the top 10 popular albums from each generation. It seemed to be
         the best of both worlds, considering that it captured a group of popular songs from an artists, but still allowed for artists
@@ -98,7 +98,7 @@
         <tr>
           <td><em>Tapestry</em> (1971) by Carole King</td>
           <td><em>OK Computer</em> (1997) by Radiohead</td>
-          <td><em>Enema of the State</em> (1999) by Blink-182</td>
+          <td><em>Enema of the State</em> (1999) by blink-182</td>
           <td><em>Red</em> (2012) by Taylor Swift</td>
         </tr>
         <tr>
@@ -134,7 +134,7 @@
         <tr>
           <td><em>Saturday Night Fever: The Original Movie Sound Track</em> (1977) by Various Artists</td>
           <td><em>Mellon Collie and the Infinite Sadness</em> (1995) by Smashing Pumpkins</td>
-          <td><em>From Under the Cork Tree</em> (2005) by Fallout Boy</td>
+          <td><em>From Under the Cork Tree</em> (2005) by Fall Out Boy</td>
           <td><em>My World 2.0</em> (2010) by Justin Bieber</td>
         </tr>
       </table>
@@ -186,9 +186,10 @@
       <p>The analysis portion of this project took place in R. I learned about R in my MATH 352 Statistical Data Analysis course.
         I used the CSV files and imported them into the R workspace to run One Sample t-tests to find 95% confidence intervals,
         Welch Two Sample t-tests in which the variances are not equal, and Pearson's Product-Moment Correlation tests with a variety
-        of alternative hypotheses (greater, less, and equal to 0). All of my tests were performed with <span id="alpha">&alpha;</span>
-        = 0.05 and can be found on my GitHub repository. Lastly, while I do point out specific minimums, maximums, etc. in my findings,
-        I am not going to list all of the songs with those scores since many songs have the same or similar ratings.</p>
+        of alternative hypotheses (greater, less, and equal to 0). I also did some linear regression and Nested F Tests in R.
+        All of my tests were performed with <span id="alpha">&alpha;</span> = 0.05 and can be found on my GitHub repository. Lastly,
+        while I do point out specific minimums, maximums, etc. in my findings, I am not going to list all of the songs with those scores
+        since many songs have the same or similar ratings.</p>
     </div>
 
     <!-- ACOUSTICNESS -->
@@ -240,7 +241,7 @@
           var divElement = document.getElementById('viz1627164008349');
           var vizElement = divElement.getElementsByTagName('object')[0];
           vizElement.style.width='100%';
-          vizElement.style.height=(divElement.offsetWidth*0.4)+'px';
+          vizElement.style.height=(divElement.offsetWidth*0.45)+'px';
           var scriptElement = document.createElement('script');
           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -248,7 +249,9 @@
       </div>
       <div class="Col">
         <div class="Description">
-          <p>95% confidence intervals:<br>
+          <p>95% confidence intervals
+            <sup class="Source">
+              <a href="https://www.simplypsychology.org/confidence-interval.html" target="_blank">[3]</a></sup>:<br>
             Baby Boomers (BB): 0.5007412 to 0.5839052<br>
             Generation X (X): 0.1355868 to 0.2163487<br>
             Millennials (M): 0.1566540 to 0.2242059<br>
@@ -265,11 +268,24 @@
     </div>
 
     <div class="Comment">
-      <p>As demonstrated by the graph, Baby Boomer music has significantly higher acousticness (or the least amount of electric
-        amplification) than any other generation. While this may not be a surprise, it was shocking to discover that Generation Z
-        music had the second-highest score for acousticness. However, the acousticness score for Generation Z is not statistically
-        greater than Millennials or Generation X. In other words, music enjoyed by Generation Z, Millennials, and Generation X
-        generally have a similar level of acousticness.</p>
+      <p>As demonstrated by the graph, Baby Boomer music has significantly higher Acousticness (or the least amount of electric
+        amplification) than any other generation. Generation Z music had the second-highest score for Acousticness. However, the
+        Acousticness score for Generation Z is not statistically greater than Millennials or Generation X. In other words, music
+        enjoyed by Generation Z, Millennials, and Generation X generally have a similar level of Acousticness. This conclusion
+        is supported by the 95% confidence intervals, as these intervals for Generation Z, Millennials, and Generation X
+        overlap.</p>
+
+      <p>Looking at the graph and confidence intervals, I am not surprised by the Baby Boomer music's Acousticness scores.
+        However, I am surprised by Generation Z. Considering how more and more technology has been integrated into music
+        production, I was anticipating Generation Z to have one of the lower Acousticness averages, along with Millennials.
+        On the other hand, since Generation X had drastically lower Acousticness than the Baby Boomers, then perhaps
+        popular Millennial and Generation Z music artists wanted to decrease the amount of electric amplification to pay homage to
+        some of the musicians they looked up to.</p>
+
+      <p>As for Generation X, I am also a bit surprised at how low the Acousticness average is. The musicians popularized by
+        Baby Boomers and Gen Xers both include a fair amount of bands (in particular, rock bands). Perhaps this stark
+        difference is due to when commercial guitar amps were invented, which was in 1947.
+        <sup class="Source"><a href="https://ourpastimes.com/klondike-solitaire.html" target="_blank">[4]</a></sup></p>
     </div>
 
     <!-- DANCEABILITY-->
@@ -282,9 +298,11 @@
     <div class="Row">
       <div class="Col">
         <div class="Description">
-          <p>All four generations appear to have relatively similar danceability scores, but Millennial music has the greatest on
-            average. Next, Generation X and Z both have comparable danceability and do not differ significantly from each other.
-            However, Baby Boomer music has a statistically lower danceability rating than all of the other generations. </p>
+          <p>95% confidence intervals:<br>
+            BB: 0.4494100 to 0.4833928<br>
+            X: 0.5011524 to 0.5563776<br>
+            M: 0.6951098 to 0.7401993<br>
+            Z: 0.4937239 to 0.5338332</p>
 
           <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
             Minimum: 0.25 (4) <br>
@@ -336,12 +354,37 @@
           var divElement = document.getElementById('viz1627164225706');
           var vizElement = divElement.getElementsByTagName('object')[0];
           vizElement.style.width='100%';
-          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          vizElement.style.height=(divElement.offsetWidth*0.45)+'px';
           var scriptElement = document.createElement('script');
           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
       </div>
+    </div>
+
+    <div class="Comment">
+      <p>All four generations appear to have relatively similar Danceability scores, but Millennial music has the greatest on
+        average. Next, Generation X and Z both have comparable Danceability and do not differ significantly from each other
+        since their confidence intervals have some overlap. However, Baby Boomer music has a statistically lower Danceability
+        rating than all of the other generations. The Baby Boomer confidence interval for Danceability does not even
+        coincide with Generation Z's, which has the second lowest Danceability average.</p>
+
+      <p>I was surprised by the results for this track attribute. Having heard some of my parents' favorite music, I was under
+        the impression that Baby Boomer music was the most "danceable." However, it ranked very low compared to all of the other
+        generations. On the other hand, Millennials had the highest ranked Danceability, with Generation X and Z falling in
+        between.</p>
+
+      <p>As for further exploration, I ran a correlation test between each generation's Danceability and Tempo track
+        attributes (since Spotify claims tempo affects Danceability). Across all 4 generations, Danceability and Tempo are
+        inversely related. For Baby Boomers, the correlation coefficient r = -0.2303871 and the p-value = 0.00581; for
+        Generation X, r = -0.3595551 and p-value = 1.705e-07; for Millennials, r = -0.6470702 and p-value = 2.216e-14. As for
+        Generation Z, r = -0.03936581 and p-value = 0.6336, which strangely, suggests there is no relationship between
+        Danceability and Tempo.</p>
+
+      <p>This relationship is weak for Baby Boomers, but moderate to strong for all other generations. Tempo will be explained
+        later on in this article, but the average tempo for all generations is around 118 BPM. I speculate a song's Danceability
+        decreases when the tempo is too slow and too fast, with the "sweet spot" being centered around Millennial's confidence
+        interval for tempo, 107 to 114 BPM. This particular question will be further explored in the Tempo section.</p>
     </div>
 
     <!-- DURATION -->
@@ -394,7 +437,7 @@
           var divElement = document.getElementById('viz1627164406608');
           var vizElement = divElement.getElementsByTagName('object')[0];
           vizElement.style.width='100%';
-          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          vizElement.style.height=(divElement.offsetWidth*0.45)+'px';
           var scriptElement = document.createElement('script');
           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -402,11 +445,11 @@
       </div>
       <div class="Col">
         <div class="Description">
-          <p>As depicted in the graph, there appears to be 2 generations with lengthier music and 2 generations with shorter
-            music. On average, Generation Z tends to have longer songs than all the other generations, with an average of 5.1
-            minutes. Baby Boomers have songs with an average of 4.6 minutes, but this is statistically lower than Generation Z's
-            music. Millennials and Generation X both have similar length songs with average durations of 3.7 minutes and
-            3.6 minutes respectively.</p>
+          <p>95% confidence intervals:<br>
+            BB: 257253.5 to 303092.0 (4.3 to 5.05 minutes)<br>
+            X: 211100.5 to 228049.5 (3.5 to 3.8 minutes)<br>
+            M: 217707.1 to 229793.6 (3.6 to 3.8 minutes)<br>
+            Z: 287314.1 to 326335.5 (4.8 to 5.4 minutes)</p>
 
           <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
             Minimum: 62253 or 1.03 minutes (10) <br>
@@ -415,6 +458,18 @@
             Median: 230933 or 3.8 minutes (9)</p>
         </div>
       </div>
+    </div>
+
+    <div class="Comment">
+      <p>As depicted in the graph, there appears to be 2 generations with lengthier music and 2 generations with shorter
+        music. On average, Generation Z tends to have longer songs than all the other generations, with an average of 5.1
+        minutes. Baby Boomers have songs with an average of 4.6 minutes, but this is statistically lower than Generation Z's
+        music, as the overlap between these two generations is minimal. Millennials and Generation X both have similar length
+        songs with average durations of 3.7 minutes and 3.6 minutes respectively.</p>
+
+      <p>The length of a song has many different factors, but I think it's unlikely that musicians have a target song duration
+        in mind when songwriting. Therefore, in addition to not having any other data, I did not feel the need to further
+        analyze or speculate why the average durations of these generations' songs differ.</p>
     </div>
 
     <!-- ENERGY -->
@@ -429,9 +484,11 @@
     <div class="Row">
       <div class="Col">
         <div class="Description">
-          <p>Similar to the Danceability averages graph, the generations tend to be grouped. As for Energy, Millennials and Generation
-            X have similar ratings on average. Generation Z and Baby Boomers both tend to be lower than these two generations, but are
-            both similar to each other.</p>
+          <p>95% confidence interval:<br>
+            BB: 0.5808731 to 0.6315213<br>
+            X: 0.7022252 to 0.7679907<br>
+            M: 0.7077068 to 0.7790205<br>
+            Z: 0.6047899 to 0.6749819</p>
 
           <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
             Minimum: 0.000581 (1) <br>
@@ -482,12 +539,33 @@
           var divElement = document.getElementById('viz1627164610769');
           var vizElement = divElement.getElementsByTagName('object')[0];
           vizElement.style.width='100%';
-          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          vizElement.style.height=(divElement.offsetWidth*0.45)+'px';
           var scriptElement = document.createElement('script');
           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
       </div>
+    </div>
+
+    <div class="Comment">
+      <p>Similar to the Danceability averages graph, the generations tend to be grouped. As for Energy, Millennials and Generation
+        X have similar ratings on average. Generation Z and Baby Boomers both tend to be lower than these two generations, but are
+        both similar to each other. Again, the differences in these two groups are statistically significant. The confidence
+        intervals further corroborate this.</p>
+
+      <p>Immediately upon analyzing this result, I began to wonder about the connection between Acousticness and Energy. In the
+        description that Spotify provides, death metal is compared to the classical music composer Bach. It seemed that Spotify is
+        implying acousticness and energy are inversely related. Thus, I began to run another correlation test between these two
+        track attributes.</p>
+
+      <p>Starting with the Baby Boomer generation, I was surprised to discover that there is not really any relationship between
+        acousticness and energy. The correlation coefficient is 0.04264312 and the p-value is 0.6143.</p>
+
+      <p>However, from Generation X forward, the trend reverses. The correlation coefficient between Acousticness and Energy for
+        Generation X music is -0.7923147 and the p-value is < 2.2e-16. As I suspected, there is a high negative correlation between these
+        two attributes. Furthermore, music popularized by Millennials also follows this trend, with r = -0.7402408 and the p-value also
+        being < 2.2e-16. Popular Generation Z music displays the strongest inverse relationship between Acousticness and Energy, with
+        r = -0.8902323 and again, the p-value being < 2.2e-16</p>
     </div>
 
     <!-- INSTRUMENTALNESS -->
@@ -542,7 +620,7 @@
           var divElement = document.getElementById('viz1627169611230');
           var vizElement = divElement.getElementsByTagName('object')[0];
           vizElement.style.width='100%';
-          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          vizElement.style.height=(divElement.offsetWidth*0.45)+'px';
           var scriptElement = document.createElement('script');
           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -550,10 +628,11 @@
       </div>
       <div class="Col">
         <div class="Description">
-          <p>Despite the stark contrasts between each of the four generations' averages for instrumentalness, Generation X and Z
-            are not statistically distinct from one another. They both have relatively similar instrumentalness ratings on average.
-            However, Baby Boomers have a significantly lower instrumentalness score and Millennial music even more so. In short,
-            Generation X and Z are similar in terms of instrumentalness, but Baby Boomers come in third and Millennials in fourth.</p>
+          <p>95% confidence interval:<br>
+            BB: -0.000120744 to 0.031927427<br>
+            X: 0.04969976 to 0.10633132<br>
+            M: -0.0002476606 to 0.0012080513<br>
+            Z: 0.02606406 to 0.07883811</p>
 
           <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
             Minimum: 0 (210) <br>
@@ -562,6 +641,24 @@
             Median: 1.77e-05 (10)</p>
         </div>
       </div>
+    </div>
+
+    <div class="Comment">
+      <p>Despite the stark contrasts between each of the four generations' averages for Instrumentalness, Generation X and Z
+        are not statistically distinct from one another. They both have relatively similar Instrumentalness ratings on average and
+        the confidence intervals overlap greatly. However, Baby Boomers have a significantly lower Instrumentalness score and
+        Millennial music even more so. In short, Generation X and Z are similar in terms of Instrumentalness, Baby Boomers come in
+        third, and Millennials in fourth.</p>
+
+      <p>Again, the Spotify description (specifically the "ooh" and "aah" section) for this attribute made me wonder if there was
+        any relationship between Instrumentalness and Speechiness. Preferably, there should be no relationship between these
+        attributes because then, I would think either one or both would be innaccurate.</p>
+
+      <p>After doing some correlation tests, it is clear that for most of the generations, there is essentially no relationship
+        between these variables. Many of the p-values were above 0.1, clearly indicating no statistically significant relationship.
+        However, for Generation Z, the p-value = 0.0006935 and r = -0.2748376. Although this suggests a small relationship, it
+        makes me wonder if popular Generation Z music has a lot more filler sounds, like "ooh" and "aah." As of right now, I do
+        not have the data to look into this further.</p>
     </div>
 
     <!-- MODE -->
@@ -574,16 +671,17 @@
     <div class="Row">
       <div class="Col">
         <div class="Description">
-          <p>The averages represented in this graph indicate the proportion of songs written in a major key. That being said, it
-            is evident that there each generation is in its own distinct group as far as mode goes. Baby Boomers have the highest
-            proportion of songs written in a major key; far more than the other three generations. Millennials come in second,
-            Generation X in third, and Generation Z in fourth.</p>
+          <p>95% confidence interval:<br>
+            BB: 0.7766900 to 0.8993664<br>
+            X: 0.4753895 to 0.6146105<br>
+            M: 0.6527202 to 0.8200071<br>
+            Z: 0.3295224 to 0.4892695</p>
 
-            <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
-              Minimum: 0 (231) <br>
-              Maximum: 1 (370) <br>
-              Average: 0.6156406 (0) <br>
-              Median: 1 (370)</p>
+          <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
+            Minimum: 0 (231) <br>
+            Maximum: 1 (370) <br>
+            Average: 0.6156406 (0) <br>
+            Median: 1 (370)</p>
         </div>
       </div>
       <div class="Col">
@@ -618,7 +716,7 @@
           var divElement = document.getElementById('viz1627316713432');
           var vizElement = divElement.getElementsByTagName('object')[0];
           vizElement.style.width='100%';
-          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          vizElement.style.height=(divElement.offsetWidth*0.45)+'px';
           var scriptElement = document.createElement('script');
           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -626,6 +724,20 @@
       </div>
     </div>
 
+    <div class="Comment">
+      <p>The averages represented in this graph indicate the proportion of songs written in a major key. That being said, it
+        is evident that there each generation is in its own distinct group as far as mode goes. Baby Boomers have the highest
+        proportion of songs written in a major key; far more than the other three generations. Millennials come in with the
+        second-highest, Generation X with the third-highest, and Generation Z with the fourth-highest.</p>
+
+      <p>Similar to Duration, there was not anything else that I wanted to look into as far as mode goes. However, I do think
+        it is important to mention that the overall trend seems to be that the number of popular songs written in major key
+        has generally decreased throughout the years. This may be caused by musicans writing songs more about serious or emotional
+        topics. However, I think there were many musicians from every generations that discussed these kinds of topics in their
+        songs; for example, The Beatles, Nirvana, Eminem, and Billie Eilish.</p>
+    </div>
+
+    <!-- SPEECHINESS -->
     <div class="Definition">
       <span class="Attributes">Speechiness</span> <br>
       <span>Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording
@@ -668,7 +780,7 @@
           var divElement = document.getElementById('viz1627170233066');
           var vizElement = divElement.getElementsByTagName('object')[0];
           vizElement.style.width='100%';
-          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          vizElement.style.height=(divElement.offsetWidth*0.45)+'px';
           var scriptElement = document.createElement('script');
           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -676,17 +788,54 @@
       </div>
       <div class="Col">
         <div class="Description">
-          <p>Although not as clear as in the Mode averages graph, the 4 generations each have distinct Speechiness averages.
-            Generation Z has the largest Speechiness average, followed by Generation X, Millennials, and last but not least,
-            Baby Boomers.</p>
+          <p>95% confidence interval:<br>
+            BB: 0.03761935 to 0.04340036<br>
+            X: 0.08971673 to 0.10981027 <br>
+            M: 0.04319721 to 0.04901915<br>
+            Z: 0.1111460 to 0.1429238</p>
 
-            <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
-              Minimum: 0.0254 (1) <br>
-              Maximum: 0.438 (2) <br>
-              Average: 0.08270416 (0) <br>
-              Median: 0.0564 (19)</p>
+          <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
+            Minimum: 0.0254 (1) <br>
+            Maximum: 0.438 (2) <br>
+            Average: 0.08270416 (0) <br>
+            Median: 0.0564 (19)</p>
         </div>
       </div>
+    </div>
+
+    <div class="Comment">
+      <p>Although not as clear as in the Mode averages graph, the 4 generations each have distinct Speechiness averages.
+        The confidence intervals corroborate this as there is little to no overlap in each of the four generations.
+        Additionally, as expected, the averages and most of the values are below 0.33, which Spotify suggests is mainly
+        music. Generation Z has the largest Speechiness average, followed by Generation X, Millennials, and last but not
+        least, Baby Boomers.</p>
+
+      <p>Speechiness was an attribute that interested me from the beginning of this project. After gathering the 10 albums
+        from each generation, I noticed that the number of rappers included in the final list increased throughout each
+        generation. That being said, I expected Speechiness to steadily increase throughout the 4 generations. However, this
+        was generally not the case. Looking further into the data, I realized that the musicians with the highest Speechiness
+        rating of 0.438 belong to Smashing Pumpkins and R.E.M., both of whom are not self-proclaimed hip-hop artists.
+        Despite this, for the most part, rappers such as Dr. Dre, Eminem, Kanye West, Drake, and Kendrick Lamar do have
+        higher-than-average Speechiness scores.</p>
+
+      <p>Average Speechiness Scores:<br>
+        X: Smashing Pumpkins – 0.119134<br>
+        X: R.E.M. – 0.1099533<br>
+        X: Dr. Dre – 0.09469444<br>
+        M: Eminem – 0.04617<br>
+        Z: Drake – 0.137716<br>
+        Z: Kanye West – 0.1312615<br>
+        Z: Kendrick Lamar – 0.1474</p>
+
+      <p>With the exception of Eminem, the rappers all had average Speechiness scores well above average.</p>
+
+      <p>As for the fluctuating trend seen in the graph, I looked at each artist's average Speechiness score. Baby Boomers
+        typically had scores around 0.03 to 0.04. Generation X had scores often centered around 0.08 with several artists
+        having averages around 0.1. Millennials had scores consistently averaging around 0.04. Lastly, Generation Z's artists
+        all had Speechiness scores of at least 0.1.</p>
+
+      <p>Overall, these results simply represent the presence of spoken words in a track. However, what truly matters is not
+        quantity, but quality.</p>
     </div>
 
     <!-- TEMPO -->
@@ -699,8 +848,11 @@
     <div class="Row">
       <div class="Col">
         <div class="Description">
-          <p>Again, this may not be clear from the chart, but each generation has distinct Tempo averages. Generation X clearly has
-            faster songs on average, followed by Generation Z, Millennials, and Baby Boomers.</p>
+          <p>95% confidence interval:<br>
+            BB: 102.3784 to 111.5822 BPM<br>
+            X: 130.1459 to 137.4087 BPM<br>
+            M: 107.1849 to 114.6354 BPM<br>
+            Z: 109.1462 to 119.3217 BPM</p>
 
           <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
             Minimum: 65.09 (6) <br>
@@ -741,12 +893,78 @@
           var divElement = document.getElementById('viz1627170109731');
           var vizElement = divElement.getElementsByTagName('object')[0];
           vizElement.style.width='100%';
-          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          vizElement.style.height=(divElement.offsetWidth*0.45)+'px';
           var scriptElement = document.createElement('script');
           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
       </div>
+    </div>
+
+    <div class="Comment">
+      <p>Again, this may not be clear from the chart, but the 4 generations can be split into 3 distinct groups based on Tempo.
+        Generation X clearly has faster songs on average and its confidence interval is much higher than all the other generations.
+        Generation Z has the second fastest songs on average, but its confidence interval overlaps with Millennials. Although
+        their intervals overlap, Generation Z music tends to have faster tempo than Baby Boomers on average. However, there is no
+        statistically significant distnction between the tempo of Millennial and Baby Boomer music.</p>
+
+      <p>As stated previously, I will test my hypothesis of Tempo having a parabolic shape when used to predict Danceability. To recap,
+        for Baby Boomers, this relationship is not very strong to begin with, as its r = -0.2303871 and p-value = 0.00581. Generation
+        X displays a stronger relationship between these attributes with its r = -0.3595551 and p-value = 1.705e-07. Millennial
+        music has an even greater relationship with a correlation coefficient of -0.6470702 and p-value of 2.216e-14. However,
+        Generation Z music breaks the trend and its data suggests that there is no significant relationship between these two attributes.
+        Its correlation coefficient is only -0.03936581 and its p-value, 0.6336, is fairly large.</p>
+
+      <p>Regardless of the strength of this relationship, all of these generations display an inverse relationship between Tempo and
+        Danceability. Therefore, I am predicting the linear model to be a negative parabola.</p>
+
+      <p>Starting with popular Baby Boomer music, I created the model <span class = "Function">Danceability ~ Tempo</span>. That is,
+        <span class = "Function">Danceability = Tempo * a + c</span> where <span class = "Function">a</span> and
+        <span class = "Function">c</span> are both unknown constants. R printed the summary of this linear model. This linear model
+        has a p-value of 0.00581 and an F-statistic of 7.847 on 1 and 140 degrees of freedom. Clearly, this linear model is useful for
+        using Tempo to predict Danceability. The mathematical equation for this model is
+        <span class = "Function">Danceability = -0.0008506 * Tempo + 0.5574036</span>. Next, I created the quadratic model,
+        <span class = "Function">Danceability ~ I(Tempo)^2 * a + c</span>. R stated that this quadratic model has a
+        p-value of 2.745e-11 and an F-statistic of 29.12 on 2 and 139 degrees of freedom. This quadratic model is also useful for
+        using Tempo to predict Danceability. The mathematical equation for this model is
+        <span class = "Function">Danceability = -0.0000438 * Tempo<sup>2</sup> + 0.0098582 * Tempo - 0.0535306</span>.
+        Next, I decided to compare these two models using <span class = "Function">anova</span>
+        or R's version of a Nested F Test. The results of this test included a p-value of 1.592e-10, indicating that the quadratic
+        model's quadratic term is statistically significant and therefore, the complete model should be used over the reduced.
+        Finally, after confirming that the quadratic model is better to use, the estimate R gives for the quadratic term is indeed
+        negative, albeit small. In summary, this suggests that there is a "peak" tempo for Baby Boomer music that maximizes
+        Danceability and that tempo is 113 BPM for an estimated max Danceability score of 0.501.</p>
+
+      <p>I repeated this process with the rest of the generations:</p>
+
+      <p>Generation X:<br>
+        Linear Model: <span class = "Function">Danceability = -0.0027340 * Tempo + 0.8945102</span><br>
+        This model is useful with a p-value = 1.705e-07 and F-statistic of 29.4 on 1 and 198 degrees of freedom.<br>
+        Quadratic Model: <span class = "Function">Danceability = -1.246e-05 * Tempo<sup>2</sup> + 5.844e-04 * Tempo + 0.6819</span><br>
+        This model is also useful with a p-value = 9.238e-07 and F-statistic of 14.92 on 2 and 197 degrees of freedom.<br>
+        The Nested F Test suggests that the linear model is better at using Tempo to predict Danceability, as the p-value = 0.4723.
+        Therefore, there does not appear to be any realistic peak tempo that maximizes Danceability.</p>
+
+      <p>Millennials:<br>
+        Linear Model: <span class = "Function">Danceability = -0.003916 * Tempo + 1.151977</span><br>
+        This model is useful with a p-value = 2.216e-14 and F-statistic of 77.79 on 1 and 108 degrees of freedom.<br>
+        Quadratic Model: <span class = "Function">Danceability = -3.909e-05 * Tempo<sup>2</sup> + 5.606e-03 * Tempo + 0.5918</span><br>
+        This model is also useful with a p-value = 1.456e-14 and F-statistic of 43.55 on 2 and 107 degrees of freedom.<br>
+        The Nested F Test suggests that the quadratic model is better at using Tempo to predict Danceability, as the p-value = 0.01747.
+        Therefore, there is a suggested peak tempo that maximizes Danceability for Millennial music and that is 71.7 BPM for an estimated
+        max Danceability score of 0.793.</p>
+
+      <p>Generation Z:<br>
+        Linear Model: <span class = "Function">Danceability = -0.0001552 * Tempo + 0.5315042</span><br>
+        Surprisingly, this model is not useful since its p-value = 0.6336 and F-statistic = 0.2282 on 1 and 147 degrees of freedom.<br>
+        Quadratic Model: <span class = "Function">Danceability = -5.935e-05 * Tempo<sup>2</sup> + 0.01456 * Tempo - 0.3166</span><br>
+        This model, however, is also useful with a p-value = 6.445e-07 and F-statistic of 15.74 on 2 and 146 degrees of freedom.<br>
+        The Nested F Test suggests that the quadratic model is better at using Tempo to predict Danceability, as the p-value = 1.101e-07.
+        Therefore, there is a suggested peak tempo that maximizes Danceability for Generation Z music and that is 123 BPM for an estimated
+        max Danceability score of 0.576.</p>
+
+      <p id = "Note"><em>Note: For the full test outputs, please check the GitHub repository under model_tests.txt. Additionally, all the residuals
+        for the models were 0.18 or less; I find this reasonable.</em></p>
     </div>
 
     <!-- VALENCE -->
@@ -799,7 +1017,7 @@
           var divElement = document.getElementById('viz1627169977682');
           var vizElement = divElement.getElementsByTagName('object')[0];
           vizElement.style.width='100%';
-          vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+          vizElement.style.height=(divElement.offsetWidth*0.45)+'px';
           var scriptElement = document.createElement('script');
           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -807,8 +1025,11 @@
       </div>
       <div class="Col">
         <div class="Description">
-          <p>As seen in previous graphs, the generations tend to be grouped with 2 generations having higher Valence scores and the
-            other 2 with lower Valence scores.</p>
+          <p>95% confidence interval:<br>
+            BB: 0.5780253 to 0.6207353<br>
+            X: 0.346901 to 0.408135<br>
+            M: 0.6553183 to 0.7412998<br>
+            Z: 0.3268963 to 0.3929292</p>
 
           <p>Across all 4 generations, here are some other statistics that are noteworthy:<br>
             Minimum: 0.0498 (2) <br>
@@ -819,14 +1040,17 @@
       </div>
     </div>
 
-    <div class="Questions">
-      <p><br><b>Other Insights</b> <br>
-        Going into this project, I also had a couple questions about music that I wanted to look into. Specifically, I wanted to test some
-        of my hypotheses about the relationships between some of the track attributes.</p>
+    <div class="Comment">
+      <p>As seen in previous graphs, the generations tend to be grouped with 2 generations having higher Valence scores and the
+        other 2 with lower Valence scores. Millennials have the highest Valence scores on average, followed by Baby Boomers.
+        However, since the Valence confidence interval for Millennials has no overlap with the Baby Boomers, Millennials have
+        statistically higher Valence on average. After Baby Boomers, Generation X and Z have the two lowest Valence averages.
+        Their confidence intervals have major overlap and they are both much less than the Baby Boomer's interval, suggesting
+        significantly lower Valence scores on average.</p>
 
-      <p><em>1. It is commonly believed that happier sounding songs tend to have faster tempos. Since Spotify has a track attribute called
-          "valence" that is supposed to measure the "positiveness" of a track, I though this would be an appropriate measure to use in
-          relation to tempo to test this theory.</em></p>
+      <p>Another relationship I wanted to explore was between Tempo and Valence. I think happier sounding songs tend to have
+        faster tempos. Since Spotify has a track attribute called "valence" that is supposed to measure the "positiveness" of
+        a track, I though this would be an appropriate measure to use in relation to tempo to test this theory.</p>
 
       <p>As it turns out, for the Baby Boomer music, this hypotheses generally holds true; upbeat songs are generally more positive
         than slower songs. The p-value is only 0.0004119 which is much smaller than <span id="alpha">&alpha;</span> = 0.05.
@@ -844,27 +1068,55 @@
         not smaller than <span id="alpha">&alpha;</span> = 0.05, so I cannot conclude that valence and tempo are positively related.
         Additionally, the correlation coefficient is 0.03481944 which again, implies that there is close to no relationship between
         those two track attributes.</p>
+    </div>
 
-      <p><em>2. One reason why people love music is because they can dance to it. This common belief made me wonder if there is any
-        relationship between danceability and tempo and if so, fast or slow tempos.</em></p>
+    <div class="Questions">
+      <p><b>Overarching Themes</b> <br>
+        Lastly, I tried to look for patterns and relationships among track attributes for the entire set of 601 songs. In order to
+        answer this, I reviewed each generation's correlation matrix and the correlation matrix of all the data combined.
+        While there were many relationships between attributes within each generation, there were two pairs of track attributes
+        that I discovered in the combined correlation matrix: (1) Valence and Danceability and (2) Acousticness and Energy.</p>
 
-      <p>For Baby Boomer music, as tempo increases, danceability decreases. When using the hypothesis that danceability and tempo
-        have an inverse relationship, the p-value is 0.002905 which is smaller than <span id="alpha">&alpha;</span> = 0.05.
-        The correlation coefficient, on the other hand, is only -0.2303871 which only suggests low correlation.</p>
+      <p>The Valence and Danceability pairing had a correlation coefficient of 0.426540564, suggesting moderate correlation, with a
+        p-value less than 2.2e-16. This particular relationship suggests that across these 4 generations, popular music with higher Valence
+        have higher Danceability and vice versa. This trend also appears within each generation, although to varying extents. Baby
+        Boomers displayed a low correlation between these two track attributes with r = 0.3772867 and p-value = 3.685e-06. Generation
+        X showed at moderate correlation with r = 0.4156355 and p-value = 9.341e-10. Millennials should the strongest relationship
+        overall with r = 0.6266014 and p-value = 2.442e-13. On the other hand, Generation Z music had the lowest relationship with
+        r = 0.1931371 and p-value = 0.01828.</p>
 
-      <p>Generation X music shows a similar relationship. When using the same hypothesis, the p-value is 8.525e-08 and is much
-        less than <span id="alpha">&alpha;</span> = 0.05. The correlation coefficient also points to low correlation though, with r =
-        -0.3595551.</p>
+      <p>The Acousticness and Energy pairing had a correlation coefficient of -0.661279313,
+        suggesting high correlation, with a p-value also less than 2.2e-16. This relationship suggests that across these 4 generations,
+        popular music with higher Acousticness has lower Energy and vice versa. Despite my findings indicating that the Baby Boomer
+        generation displays no relationship between these two attributes, they appear to have a generally strong relationship over time.</p>
+    </div>
 
-      <p>Millennial music also shows a similar relationship, but much stronger than the previous two generations. Again, using the
-        same hypothesis, the p-value is 1.108e-14 and is significantly smaller than <span id="alpha">&alpha;</span> = 0.05. The
-        correlation coefficient is also much stronger than the previous two, with r = -0.6470702, suggesting high correlation.</p>
+    <div class="Conclusion">
+      <p><b>Conclusion</b><br>
+        Overall, this data analysis project was both fun and challenging. I really enjoyed learning about each of the four generation's
+        music preferences and explore Spotify's database. In summary, I found Baby Boomer music to be characterized by easy-going tunes with
+        high levels of acousticness and positiveness. Generation X music has a lot of rock elements such as high levels of instrumentalness,
+        faster tempo, and lower levels of valence. Millennial music tends to be extremely energetic and in turn, very "danceable" and
+        happy-sounding — exuding the birth of true pop music. Last, but not least, Generation Z music was in a league of its own as it
+        oftentimes didn't share the same trends as the other 3 generations. However, I would describe my generation's music to be heavily
+        influenced by rap where speech and the music/beat balance each other out and overall, tends to be more brooding (for a lack of a
+        better term).</p>
 
-      <p>Lastly, Generation Z music displays little relationship between danceability and tempo. Using the basic hypothesis that
-        danceability and tempo have no relation, the p-value still ended up being 0.6336 which is not less than
-        <span id="alpha">&alpha;</span> = 0.05. Similarly, the correlation coefficient is -0.03936581, which suggests virtually
-        no relationship.</p>
+      <p>However, despite the results, I would like to gain some more clarity on how Spotify rates and describes each attribute. Although
+        looking through all of the data they have created and gathered was interesting, I disagreed with some of my results and found the
+        descriptions for some of the attributes to be vague. For instance, I thought Instrumentalness would be significantly higher for
+        Baby Boomers and lower for Generation Z. Moreover, the description for this attribute includes "ooh" and "aah" sounds as instruments.
+        I disagree with that portion of the description since many pop songs use "ooh" and "aah" as repetitive sounds to fill the gaps in
+        lyrics. Additionally, while Speechiness is divided into different sections (for example: music, "spoken" music, and podcasts), I
+        think it makes this attribute more confusing and possibly harder to gauge. On a different note, I think many of the attributes
+        overlap. For instance, Energy implicitly states in its description that lower Acousticness equates to higher Energy. Again, I think
+        this "codependency" may make it harder to analyze music using Spotify's database. I assume that Spotify has a program that "listens" to
+        every track that is uploaded to their platform and due to these vague descriptions, so I think there is more error in this database
+        than one might expect.</p>
 
+      <p>Analyzing music is a tricky task and of course, could upset many music lovers. Again, music is subjective; numbers cannot justify or
+        quantify music. However, despite these flaws in Spotify's database it was truly an enjoyable experience and the results that I have
+        found are purely to fuel my intellectual curiousity.</p>
     </div>
 
     <div class="Footer">

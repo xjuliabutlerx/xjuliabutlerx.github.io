@@ -14,7 +14,7 @@ Metallic Sunburst - #9B7E46 (gold)
 
 .Header h1 {
   font-size: 32px;
-  font-family: "Avenir Next";
+  font-family: "Avenir Next", "Nunito", sans-serif;
   text-align: center;
   color: #0E1116;
 }
@@ -29,7 +29,7 @@ Metallic Sunburst - #9B7E46 (gold)
 .Navigation a {
   float: left;
   display: block;
-  font-family: "Avenir Next";
+  font-family: "Avenir Next", "Nunito", sans-serif;
   color: #E0E0E2;
   text-align: center;
   padding: 14px 16px;
@@ -47,12 +47,12 @@ Metallic Sunburst - #9B7E46 (gold)
 }
 
 .Back a {
-  font-family: "Avenir Next";
+  font-family: "Avenir Next", "Nunito", sans-serif;
   color: #0E1116;
 }
 
 .Back a:hover {
-  font-family: "Avenir Next";
+  font-family: "Avenir Next", "Nunito", sans-serif;
   color: #9B7E46;
 }
 
@@ -78,13 +78,13 @@ Metallic Sunburst - #9B7E46 (gold)
 
 .Project_Introduction h2 {
   font-size: 20px;
-  font-family: "Avenir Next";
+  font-family: "Avenir Next", "Nunito", sans-serif;
   text-align: center;
 }
 
 .Project_Introduction p {
   font-size: 18px;
-  font-family: "Avenir Next";
+  font-family: "Avenir Next", "Nunito", sans-serif;
   text-align: left;
 }
 
@@ -97,13 +97,13 @@ Metallic Sunburst - #9B7E46 (gold)
 .Footer p {
   font-size: 16px;
   color: #0E1116;
-  font-family: "Avenir Next";
+  font-family: "Avenir Next", "Nunito", sans-serif;
 }
 
 .Footer a {
   font-size: 16px;
   color: #0E1116;
-  font-family: "Avenir Next";
+  font-family: "Avenir Next", "Nunito", sans-serif;
 }
 
 .Footer a:hover {

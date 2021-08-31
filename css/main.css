@@ -64,6 +64,7 @@ Metallic Sunburst - #9B7E46 (gold)
 .Introduction h1 {
   font-size: 32px;
   font-family: "Courier";
+  font-weight: bold;
   text-align: center;
 }
 

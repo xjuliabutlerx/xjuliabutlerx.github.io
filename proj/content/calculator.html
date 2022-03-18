@@ -41,9 +41,11 @@
       modules in the starter kit, I decided to embark on my own project with the hardware: a calculator.</p>
 
       <p>I thought this would be a good starter project since many computer science students create calculator apps. In this project,
-      I would not only extend my programming skills with the Arduino IDE, but also learn more about wiring Arduino/Elegoo hardware. A
-      picture of the finished project is below, as well as how I wired the calculator, made the algorithm, and the roadblocks I faced.
-      The code for my calculator can be found in my GitHub repository, linked above.</p>
+      I would not only extend my programming skills with the
+      <a href="https://www.arduino.cc/reference/en/" target="_blank">Arduino IDE</a>, but also learn more about wiring Arduino/Elegoo
+      hardware. A picture of the finished project is below. In the following article, I will explain how I wired the calculator, made
+      the algorithm, the roadblocks I faced, and summarize my calculator's abilities and constraints. The code for my calculator can be
+      found in my GitHub repository, linked above.</p>
 
       <p class="Note">Note: Since the LCD module (blue screen) is hard to capture on my phone's camera, I am providing what is printed
       on the screen below each picture.</p>
@@ -60,8 +62,8 @@
 
       After sifting through the accessories that came with the Starter Kit, I realized that the membrane switch module and LCD 1602 module
       would be ideal for the calculator's keypad and display. In order to use both of these modules, I also had to use the breadboard,
-      multiple jumper wires, and the potentiometer module (to adjust the contrast of the LCD). The source of power for the calculator came
-      from my computer.</p>
+      multiple jumper wires, and the potentiometer module (to adjust the contrast of the LCD). The source of power for the calculator is
+      my computer.</p>
 
       <p>I followed the instructions from the
         <a href="https://images-na.ssl-images-amazon.com/images/I/D1oC-c3G5TS.pdf" target="_blank">Starter Kit</a>
@@ -89,7 +91,7 @@
 
     <div class="Project_Body">
       <p><b>Algorithm</b> <br>
-      After wiring the calculator, I had to craft the calculator program. I broke up this part of the project into two parts: parsing the
+      After wiring the calculator, I had to design the calculator program. I broke up this part of the project into two parts: parsing the
       input and calculating. Before going on to the specifics of the algorithm, a goal I established for myself is for my calculator to
       be able to evaluate long expressions and follow PEMDAS (order of operations).</p>
 
@@ -312,7 +314,11 @@
       <span class="Code">empty</span>, which is the answer. Once the algorithm verifies this, then it will return the value
       remaining in the expression array.</p>
 
-      <p>Last but not least, I also added in some logic to handle cases in which the user might try to divide by zero.</p>
+      <p>Last but not least, there are a couple notes about my calculator's division. First, since my program uses integer arrays
+      for both the operands and operators, it can only do integer division. In other words, any quotients with decimal points will
+      be rounded down. Specifically, 5/20 (0.25) and 99/100 (0.99) both evaluate to 0 on my calculator even though the latter
+      expression is much closer to 1 than the former. Second, I also added in some logic to handle cases in which the user
+      might try to divide by zero. The right operand (denominator) is checked before the operation is executed.</p>
     </div>
 
     <div class="Two_Images_Row">
@@ -397,13 +403,18 @@
       function that has a <span class="Code">while</span> loop).</p>
 
       <p><b>Conclusion</b><br>
-      In summary, my calculator can accept mathematical infix expressions and evaluate them using PEMDAS. The only 2 constraints
-      on my calculator are that expressions must be 16 characters or less and the user cannot evaluate an expression with a
-      negative number (although there is a workaround for this).</p>
+      In summary, my calculator can accept mathematical infix expressions and evaluate them using PEMDAS. There are 3 constraints
+      in regards to input on my calculator: 1) expressions must be 16 characters or less, 2) the user cannot evaluate an
+      expression with a negative number (although there is a workaround for this), and 3) operands cannot be numbers with decimals.
+      The only constraint in regards to output on my calculator is that any quotients with decimal points will be rounded down.
+      One final constraint that I did not have control over was the range of <span class="Code">int</span> in the Arduino IDE, which
+      ranges from -32,768 to 32,767 <sup><a href="https://www.arduino.cc/en/Reference/Int" target="_blank">[source]</a></sup>. Any
+      result or subresult with a number outside this range will cause integer overflow and therefore, an inaccurate solution.</p>
 
       <p>Since I had plans to get my feet wet with electrical engineering, this was a fun, rewarding, and challenging project for
-      me to work on over my spring break. In the future, I hope to continue building more robots/machines using Elegoo/Arduino
-      hardware and learning more about the Arduino programming language.</p>
+      me to work on over my spring break. In the future, I hope to revisit this project and improve the algorithm to account for
+      floating point results and other roadblocks. I also plan to continue building more robots/machines using Elegoo/Arduino
+      hardware and learning more about the Arduino IDE.</p>
     </div>
 
     <div class="Footer">

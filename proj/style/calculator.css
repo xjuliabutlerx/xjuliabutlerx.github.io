@@ -79,10 +79,122 @@ Metallic Sunburst - #9B7E46 (gold)
   text-align: left;
 }
 
+.Project_Introduction a {
+  font-family: "Avenir Next", "Nunito", sans-serif;
+  color: #0E1116;
+}
+
+.Project_Introduction a:hover {
+  font-family: "Avenir Next", "Nunito", sans-serif;
+  color: #9B7E46;
+}
+
+.Note {
+  font-size: 14px;
+  font-family: "Avenir Next", "Nunito", sans-serif;
+  font-style: italic;
+}
+
 .Project_Body {
   font-size: 18px;
   font-family: "Avenir Next", "Nunito", sans-serif;
   text-align: left;
+}
+
+.Project_Body a {
+  font-family: "Avenir Next", "Nunito", sans-serif;
+  color: #0E1116;
+}
+
+.Project_Body a:hover {
+  font-family: "Avenir Next", "Nunito", sans-serif;
+  color: #9B7E46;
+}
+
+.Arrays {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Arrays table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Courier";
+}
+
+.Code {
+  font-family: "Courier";
+  display: inline-block;
+  align-items: baseline;
+}
+
+.Single_Image {
+  text-align: center;
+}
+
+.Single_Image p {
+  font-size: 14px;
+  font-family: "Courier";
+  text-align: center;
+  font-style: italic;
+}
+
+.Two_Images_Row {
+  align-content: center;
+  text-align: center;
+  align-self: baseline;
+}
+
+.Two_Images_Row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Two_Images_Col {
+  float: left;
+  width: 50%;
+}
+
+.Two_Images_Col p {
+  font-size: 14px;
+  font-family: "Courier";
+  text-align: center;
+  font-style: italic;
+}
+
+.Four_Images_Row {
+
+}
+
+.Four_Images_Row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Four_Images_Col {
+  float: left;
+  width: 25%;
+}
+
+.Four_Images_Col p {
+  font-size: 14px;
+  font-family: "Courier";
+  text-align: center;
+  font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+  .Two_Images_Col {
+    width: 100%;
+  }
+
+  .Four_Images_Col {
+    width: 100%;
+  }
 }
 
 .Footer {

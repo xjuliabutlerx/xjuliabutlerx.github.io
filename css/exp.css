@@ -153,6 +153,14 @@ li.Description {
   padding-right: 10px;
 }
 
+#JPMC {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  padding-right: 10px;
+}
+
 #WM {
   display: block;
   margin-left: auto;

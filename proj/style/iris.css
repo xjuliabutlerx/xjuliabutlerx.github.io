@@ -105,6 +105,12 @@ Metallic Sunburst - #9B7E46 (gold)
   color: #9B7E46;
 }
 
+#Note {
+  font-family: "Avenir Next", "Nunito", sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
 .Footer {
   background-color: #E0E0E2;
   text-align: center;

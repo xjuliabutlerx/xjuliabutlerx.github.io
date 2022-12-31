@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Sacramento;
+  src: url("./fonts/Sacramento/Sacramento-Regular.ttf");
+}
+
 .App {
   text-align: center;
 }

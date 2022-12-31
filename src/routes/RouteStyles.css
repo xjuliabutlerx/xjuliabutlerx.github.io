@@ -1,0 +1,10 @@
+.route {
+    padding: 75px 15px 500px;
+}
+
+@media screen and (max-width: 600px) {
+    .route {
+        padding-top: 0px;
+        font-size: 75%;
+    }
+}

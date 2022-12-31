@@ -1,0 +1,21 @@
+.copyright {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    background-color: #E0E0E2;
+}
+
+a:visited {
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .copyright {
+        font-size: 75%;
+    }
+}

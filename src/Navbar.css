@@ -1,0 +1,41 @@
+.row.col h1 {
+    font-family: Sacramento, "cursive";
+}
+
+/*
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+ */
+
+.col {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.subCol {
+    flex: 1;
+    float: left;
+    width: 25%;
+    padding-top: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.subCol:hover {
+    background-color: #E0E0E2;
+}
+
+@media screen and (max-width: 600px) {
+    .col {
+        width: 100%;
+        font-size: 75%;
+    }
+
+    .subCol {
+        padding-top: 0px;
+    }
+}

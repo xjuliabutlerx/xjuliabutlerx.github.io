@@ -1,8 +1,8 @@
-@font-face {
-  font-family: Sacramento;
-  src: url("./fonts/Sacramento/Sacramento-Regular.ttf");
+.main-font {
+  font-family: "Sacramento";
 }
 
+/*
 .App {
   text-align: center;
 }
@@ -41,3 +41,4 @@
     transform: rotate(360deg);
   }
 }
+ */

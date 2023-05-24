@@ -1,9 +1,16 @@
-import "./RouteStyles.css";
+import "./About.css";
 
 const About = () => {
     return(
         <div class={"route"}>
-            <h3>About</h3>
+            <div class={"row"}>
+                <div className={"col"}>
+                    <p>Test 1</p>
+                </div>
+                <div className={"col"}>
+                    <p>Test 2</p>
+                </div>
+            </div>
         </div>
     )
 }

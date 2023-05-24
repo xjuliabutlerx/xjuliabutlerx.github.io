@@ -8,8 +8,8 @@ const linkStyle = {
 
 const Navbar = () => {
     return (
-        <div class={"row"}>
-            <div class={"col"}>
+        <div class={"row"} className={"main-font"}>
+            <div class={"col"} className={"signature-font"}>
                 <h1>Julia Butler</h1>
             </div>
             <div class={"col"}>

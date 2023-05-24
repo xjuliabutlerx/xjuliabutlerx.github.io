@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter as Router } from "react-router-dom";
 import './fonts/Sacramento/Sacramento-Regular.ttf';
+import './fonts/Mulish/static/Mulish-ExtraLight.ttf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

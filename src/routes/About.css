@@ -1,0 +1,22 @@
+.route {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    padding-top: 50px;
+    width: 100%;
+}
+
+.col {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .route {
+        padding-top: 0px;
+        font-size: 75%;
+    }
+}

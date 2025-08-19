@@ -31,7 +31,7 @@
   margin: 0 auto 2rem auto;
 }
 .Experience th, td, ul, li {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-family: 'Avenir Next', 'Inter', sans-serif;
   text-align: left;
 }
@@ -44,7 +44,7 @@ img ~ td {
 .JobDescription {
   width: 100%;
   max-width: 1500px;
-  font-size: 1.1rem;
+  font-size: 18px;
   font-family: 'Avenir Next', 'Inter', sans-serif;
   text-align: left;
   background: #fff;

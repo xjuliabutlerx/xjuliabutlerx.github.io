@@ -15,12 +15,6 @@
   text-decoration: underline;
   transition: color 0.2s;
 }
-.Introduction a:visited {
-  color: var(--secondary-color);
-}
-.Introduction a:hover {
-  color: var(--secondary-color);
-}
 .Introduction h1 {
   font-size: 2rem;
   font-family: 'Avenir Next', 'Inter', monospace;
@@ -42,7 +36,7 @@
   margin: 1.5rem auto;
 }
 .Introduction p {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-family: 'Avenir Next', 'Inter', sans-serif;
   text-align: left;
   line-height: 1.7;
@@ -59,7 +53,7 @@
   padding: 2rem 2rem;
 }
 .Overview_Skills th, td, ul {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-family: 'Avenir Next', 'Inter', sans-serif;
   text-align: center;
 }
@@ -75,9 +69,14 @@
   color: var(--secondary-color);
 }
 .Overview_Skills li {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-family: 'Avenir Next', 'Inter', sans-serif;
   text-align: left;
+}
+.Overview_Skills td {
+  font-size: 18px;
+  font-family: 'Avenir Next', 'Inter', sans-serif;
+  text-align: right;
 }
 
 /* Responsive Design */

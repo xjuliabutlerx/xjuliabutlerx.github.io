@@ -41,6 +41,28 @@
   box-shadow: 0 2px 8px rgba(155, 126, 70, 0.15);
 }
 
+.Back {
+  align-content: left;
+}
+.Back a {
+  font-family: "Avenir Next", "Nunito", sans-serif;
+  color: var(--link-color);
+}
+.Back a:hover {
+  font-family: "Avenir Next", "Nunito", sans-serif;
+  color: var(--secondary-color);
+}
+
+a {
+  font-family: "Avenir Next", "Nunito", sans-serif;
+  color: var(--link-color);
+}
+
+a:hover {
+  font-family: "Avenir Next", "Nunito", sans-serif;
+  color: var(--secondary-color);
+}
+
 html {
   box-sizing: border-box;
   font-size: 18px;

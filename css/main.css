@@ -1,118 +1,78 @@
-/*
-Color Pallette Guide:
-Gainsboro - #E0E0E2 (gray)
-Dark Red - #B10F2E
-Rich Black - #0E1116
-Metallic Sunburst - #9B7E46 (gold)
-/*
 
-/* CSS Code for making the Header of the Homepage */
-.Header {
-  padding: 20px;
-  background-color: #E0E0E2;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-.Header h1 {
-  font-size: 32px;
-  font-weight: bold;
-  font-family: "Avenir Next", "Nunito", sans-serif;
-  text-align: center;
-  color: #0E1116;
-}
-
-/* The navbar container */
-.Navigation {
-  overflow: hidden;
-  background-color: #B10F2E;
-}
-
-/* Navbar links */
-.Navigation a {
-  float: left;
-  display: block;
-  font-family: "Avenir Next", "Nunito", sans-serif;
-  color: #E0E0E2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Links - change color on hover */
-.Navigation a:hover {
-  background-color: #9B7E46;
-  color: #E0E0E2;
-}
-
+/* Introduction Section */
 .Introduction {
-  align-content: left;
+  max-width: 1500px;
+  margin: 2rem auto 2.5rem auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(58, 110, 165, 0.07);
+  padding: 2.5rem 2rem;
 }
-
 .Introduction a {
-  font-size: 18px;
-  color: #000000;
+  color: var(--link-color);
+  text-decoration: underline;
+  transition: color 0.2s;
 }
-
 .Introduction a:visited {
-  font-size: 18px;
-  color: #000000;
+  color: var(--secondary-color);
 }
-
 .Introduction a:hover {
-  color: #9B7E46;
+  color: var(--accent-color);
 }
-
 .Introduction h1 {
-  font-size: 32px;
-  font-family: "Courier";
-  font-weight: bold;
+  font-size: 2rem;
+  font-family: 'Avenir Next', 'Inter', monospace;
+  font-weight: 700;
   text-align: center;
+  margin-bottom: 0.5rem;
 }
-
 .Introduction h2 {
-  font-size: 20px;
-  font-family: "Avenir Next", "Nunito", sans-serif;
+  font-size: 1.2rem;
+  font-family: 'Avenir Next', 'Inter', sans-serif;
   text-align: center;
+  color: var(--link-color);
+  margin-bottom: 1.5rem;
 }
-
 .Introduction hr {
   width: 90%;
+  border: none;
+  border-top: 1.5px solid var(--primary-color);
+  margin: 1.5rem auto;
 }
-
 .Introduction p {
-  font-size: 18px;
-  font-family: "Avenir Next", "Nunito", sans-serif;
+  font-size: 1.1rem;
+  font-family: 'Avenir Next', 'Inter', sans-serif;
   text-align: left;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
 }
 
+/* Overview Skills Section */
 .Overview_Skills {
-  align-content: center;
+  margin: 2rem auto;
+  max-width: 1500px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(58, 110, 165, 0.07);
+  padding: 2rem 2rem;
 }
-
 .Overview_Skills th, td, ul, li {
-  font-size: 18px;
-  font-family: "Avenir Next", "Nunito", sans-serif;
+  font-size: 1.1rem;
+  font-family: 'Avenir Next', 'Inter', sans-serif;
   text-align: left;
 }
 
-.Footer {
-  background-color: #E0E0E2;
-  text-align: center;
-  padding: 10px;
+/* Responsive Design */
+@media (max-width: 800px) {
+  .Introduction, .Overview_Skills {
+    padding: 1.2rem 0.7rem;
+    max-width: 98vw;
+  }
 }
-
-.Footer p {
-  font-size: 16px;
-  color: #0E1116;
-  font-family: "Avenir Next", "Nunito", sans-serif;
-}
-
-.Footer a {
-  font-size: 16px;
-  color: #0E1116;
-  font-family: "Avenir Next", "Nunito", sans-serif;
-}
-
-.Footer a:hover {
-  background-color: #9B7E46;
-  color: #E0E0E2;
+@media (max-width: 500px) {
+  .Introduction, .Overview_Skills {
+    padding: 0.7rem 0.2rem;
+  }
 }

@@ -1,31 +1,3 @@
-/*
-Color Pallette Guide:
-Gainsboro - #E0E0E2 (gray)
-Dark Red - #B10F2E
-Rich Black - #0E1116
-Metallic Sunburst - #9B7E46 (gold)
-/*
-
-/* CSS Code for making the Header of the Homepage */
-.Header {
-  padding: 20px;
-  background-color: #E0E0E2;
-}
-
-.Header h1 {
-  font-size: 32px;
-  font-weight: bold;
-  font-family: "Avenir Next", "Nunito", sans-serif;
-  text-align: center;
-  color: #0E1116;
-}
-
-/* The navbar container */
-.Navigation {
-  overflow: hidden;
-  background-color: #B10F2E;
-}
-
 .Content {
   align-content: left;
 }
@@ -33,25 +5,41 @@ Metallic Sunburst - #9B7E46 (gold)
 h1 {
   font-size: 5px;
 }
+/* Layout for About Page */
+.AboutMain {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  margin: 2rem auto 2rem auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(58, 110, 165, 0.07);
+  padding: 2rem 2rem;
+  min-height: 350px;
+}
 
 .Left {
-  margin-top: 10px;
-  width: 50%;
-  float: left;
-  text-align: center;
+  flex: 1 1 220px;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 2rem;
 }
 
-.Left h1 {
-  font-size: 5px;
-}
 
-.Left Portrait {
+#Portrait {
+  width: 700px;
+  height: auto;
+  border-radius: 12px;
   margin-top: 10px;
+  box-shadow: 0 2px 12px rgba(58, 110, 165, 0.10);
 }
 
 .Right {
-  width: 50%;
-  float: left;
+  flex: 2 1 350px;
+  max-width: 750px;
 }
 
 .Right p {
@@ -65,43 +53,17 @@ h1 {
   font-family: "Avenir Next", "Nunito", sans-serif;
 }
 
-/* Navbar links */
-.Navigation a {
-  float: left;
-  display: block;
-  font-family: "Avenir Next", "Nunito", sans-serif;
-  color: #E0E0E2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Links - change color on hover */
-.Navigation a:hover {
-  background-color: #9B7E46;
-  color: #E0E0E2;
-}
-
-.Footer {
-  background-color: #E0E0E2;
-  text-align: center;
-  padding: 10px;
-  margin-top: 565px;
-}
-
-.Footer p {
-  font-size: 16px;
-  color: #0E1116;
-  font-family: "Avenir Next", "Nunito", sans-serif;
-}
-
-.Footer a {
-  font-size: 16px;
-  color: #0E1116;
-  font-family: "Avenir Next", "Nunito", sans-serif;
-}
-
-.Footer a:hover {
-  background-color: #9B7E46;
-  color: #E0E0E2;
+@media (max-width: 800px) {
+  .AboutMain {
+    flex-direction: column;
+    padding: 1.2rem 0.7rem;
+    max-width: 98vw;
+  }
+  .Left {
+    margin-right: 0;
+    align-items: flex-start;
+  }
+  .Right {
+    max-width: 100%;
+  }
 }

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Header */
+.Header {
+  padding: 40px 0 20px 0;
+  background: var(--primary-color);
+  box-shadow: 0 2px 8px rgba(58, 110, 165, 0.05);
+  margin: 0 auto 0 auto;
+}
+.Header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Avenir Next', 'Inter', sans-serif;
+  text-align: center;
+  color: var(--text-color);
+  letter-spacing: 1px;
+}
+
+/* Navigation Bar */
+.Navigation {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: var(--secondary-color);
+  box-shadow: 0 2px 8px rgba(177, 15, 46, 0.05);
+  padding: 0.5rem 0;
+}
+.Navigation a {
+  color: var(--primary-color);
+  font-family: 'Avenir Next', 'Inter', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  font-size: 1.1rem;
+}
+.Navigation a:hover {
+  background: var(--accent-color);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(155, 126, 70, 0.15);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+  background: var(--secondary-accent-color);
+  color: var(--text-color);
+  font-family: 'Avenir Next', 'Inter', 'Nunito', sans-serif;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+/* Common card style for project/job/experience sections */
+.card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(58, 110, 165, 0.08);
+  padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.2s;
+  max-width: 1500px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card:hover {
+  box-shadow: 0 6px 24px rgba(58, 110, 165, 0.15);
+}
+
+/* Footer */
+.Footer {
+  background: var(--primary-color);
+  text-align: center;
+  padding: 18px 0 10px 0;
+  border-top: 1.5px solid var(--accent-color);
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Footer p {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-family: 'Avenir Next', 'Inter', sans-serif;
+}
+.Footer a {
+  font-size: 1rem;
+  color: var(--link-color);
+  font-family: 'Avenir Next', 'Inter', sans-serif;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.Footer a:hover {
+  color: var(--secondary-color);
+  background: none;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  .Header h1 {
+    font-size: 2rem;
+  }
+  .Navigation {
+    gap: 0.7rem;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  .Header {
+    padding: 20px 0 10px 0;
+  }
+  .Navigation a {
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem;
+  }
+}

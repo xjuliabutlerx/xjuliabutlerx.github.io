@@ -1,140 +1,121 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Homepage - Julia Butler</title>
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <title>Homepage - Julia Butler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/colors.css"/>
+  <link rel="stylesheet" href="css/components.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
   </head>
   <body>
-    <div class="Header">
-      <h1>Julia Butler</h1>
-    </div>
 
-    <div class="Navigation">
-      <!-- Put in links and text for navigation -->
+    <header class="Header">
+      <h1>Julia Butler</h1>
+    </header>
+
+    <nav class="Navigation" aria-label="Main Navigation">
       <a href="index.html" target="_self">Home</a>
       <a href="projects.html" target="_self">Projects</a>
       <a href="exp.html" target="_self">Experience</a>
       <a href="about.html" target="_self">About</a>
-    </div>
+    </nav>
 
-    <div class="Introduction">
-      <h1>Hello World!</h1>
-      <!-- <h2>My name is Julia Butler.</h2> -->
-      <p>My name is Julia Butler. I am a recent graduate of the College of William & Mary, where I majored in Computer Science 
-        and minored in Mathematics. I graduated Magna Cum Laude and was inducted into Phi Beta Kappa. In addition, I have obtained 
-        an unofficial minor in Chinese Language & Literature.
-      </p>
+    <main>
+      <section class="Introduction card">
+        <h1>Hello World!</h1>
+        <p>My name is Julia Butler. I am a recent graduate of the College of William & Mary, where I majored in Computer Science and minored in Mathematics. I graduated Magna Cum Laude and was inducted into Phi Beta Kappa. In addition, I have obtained an unofficial minor in Chinese Language & Literature.</p>
+        <p>Some of my interests include algorithms, web development, and statistical analysis. I would love to learn more about UI/UX development, AI/machine learning, and blockchain. I have also dabbled in small projects involving electrical engineering. With my academic curriculum focusing on computer science and mathematics, I'm particularly interested in attending graduate school in the future for data science or AI/machine learning.</p>
+        <p>In August 2023, I will be starting my first full-time job as a software engineer at JPMorgan Chase in Tampa, FL. I will be in the Software Engineer Program and will be contributing to fraud detection efforts. I am excited to begin my post-college journey!</p>
+        <p><em>I made this website using GitHub pages, HTML, CSS, and JavaScript to showcase some of my personal projects and achievements. You can take a look at my code <a href="https://github.com/xjuliabutlerx/xjuliabutlerx.github.io" target="_blank">here</a>.</em></p>
+        <hr>
+        <p>Here is a brief overview of my skills, proficiencies, and relevant undergraduate coursework:</p>
+      </section>
 
-      <p>Some of my interests include algorithms, web development, and statistical analysis. I would love to learn more about UI/UX 
-        development, AI/machine learning, and blockchain. I have also dabbled in small projects involving electrical engineering.
-        With my academic curriculum focusing on computer science and mathematics, I'm particularly interested in attending graduate 
-        school in the future for data science or AI/machine learning.
-      </p>
+      <section class="Overview_Skills card">
+        <table style="width:100%; border: none; background: none;">
+          <tr>
+            <td><strong>Coding Languages:</strong></td>
+            <td>
+              <ul>
+                <li>Python (Upper-Intermediate)</li>
+                <li>C/C++ (Upper-Intermediate)</li>
+                <li>Java (Upper-Intermediate)</li>
+                <li>JavaScript (Intermediate)</li>
+                <li>R (Intermediate)</li>
+                <li>HTML (Intermediate)</li>
+                <li>CSS (Intermediate)</li>
+                <li>Swift (Beginner)</li>
+                <li>SQL (Beginner)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Foreign Languages:</strong></td>
+            <td>
+              <ul>
+                <li>Mandarin Chinese (Upper-Intermediate)</li>
+                <li>Korean (Beginner)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Computer Science Coursework:</strong></td>
+            <td>
+              <ul>
+                <li>AP Computer Science Principles</li>
+                <li>CSCI 141 - Computational Problem Solving</li>
+                <li>CSCI 241 - Data Structures</li>
+                <li>CSCI 243 - Discrete Structures of Computer Science</li>
+                <li>CSCI 301 - Software Development</li>
+                <li>CSCI 303 - Algorithms</li>
+                <li>CSCI 304 - Computer Organization</li>
+                <li>CSCI 312 - Principles of Programming Languages</li>
+                <li>CSCI 434 - Network Systems & Design</li>
+                <li>CSCI 436 - Data Mining</li>
+                <li>CSCI 454 - Computer & Network Security</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Mathematics Coursework:</strong></td>
+            <td>
+              <ul>
+                <li>AP Calculus AB (MATH 111 - Calculus I)</li>
+                <li>AP Statistics</li>
+                <li>MATH 112 - Calculus II</li>
+                <li>MATH 211 - Linear Algebra</li>
+                <li>MATH 213 - Multivariable Calculus</li>
+                <li>MATH 351 - Probability and Statistics for Scientists</li>
+                <li>MATH 352 - Statistical Data Analysis</li>
+                <li>MATH 465 - Math of Financial Economics</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Other Relevant Coursework:</strong></td>
+            <td>
+              <ul>
+                <li>AP Chinese Language & Culture (CHIN 205 & CHIN 206 -  Intermediate Chinese Consolidated I & II)</li>
+                <li>BUAD 340 - Introduction to Innovation & Entrepreneurship</li>
+                <li>CHIN 301 - Upper-Intermediate Chinese I</li>
+                <li>CHIN 302 - Upper-Intermediate Chinese II</li>
+                <li>CHIN 410 - Advanced Topics in Chinese Language, Civilization or Literature</li>
+                <li>CHIN 412 - Teaching Practicum (Teaching Assistant Mentorship for 2 semesters)</li>
+                <li>PHIL 215 - Right and Wrong in the Contemporary World</li>
+                <li>MUSC 101 - Introduction Tonal Theory</li>
+                <li>SPCH 201 - Public Speaking</li>
+                <li>SPCH 309 - Argumentation & Debate</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
 
-      <p>In August 2023, I will be starting my first full-time job as a software engineer at JPMorgan Chase in Tampa, FL. I will be
-        in the Software Engineer Program and will be contributing to fraud detection efforts. I am excited to begin my
-        post-college journey!
-      </p>
-
-      <p><em>I made this website using GitHub pages, HTML, CSS, and JavaScript to showcase some of my personal
-      projects and achievements. You can take a look at my code
-      <a href="https://github.com/xjuliabutlerx/xjuliabutlerx.github.io" target="_blank">here</a>.</em></p>
-
-      <p><br><hr><br></p>
-
-      <p>Here is a brief overview of my skills, proficiencies, and relevant undergraduate coursework:</p>
-
-      <p></p>
-    </div>
-
-    <table id="Overview_Skills" align="center">
-      <tr>
-        <td>Coding Languages:</td>
-        <td>
-          <ul>
-            <li>Python (Upper-Intermediate)</li>
-            <li>C/C++ (Upper-Intermediate)</li>
-            <li>Java (Upper-Intermediate)</li>
-            <li>JavaScript (Intermediate)</li>
-            <li>R (Intermediate)</li>
-            <li>HTML (Intermediate)</li>
-            <li>CSS (Intermediate)</li>
-            <li>Swift (Beginner)</li>
-            <li>SQL (Beginner)</li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
-        <td>Foreign Languages:</td>
-        <td>
-          <ul>
-            <li>Mandarin Chinese (Upper-Intermediate)</li>
-            <li>Korean (Beginner)</li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
-        <td>Computer Science Coursework:</td>
-        <td>
-          <ul>
-            <li>AP Computer Science Principles</li>
-            <li>CSCI 141 - Computational Problem Solving</li>
-            <li>CSCI 241 - Data Structures</li>
-            <li>CSCI 243 - Discrete Structures of Computer Science</li>
-            <li>CSCI 301 - Software Development</li>
-            <li>CSCI 303 - Algorithms</li>
-            <li>CSCI 304 - Computer Organization</li>
-            <li>CSCI 312 - Principles of Programming Languages</li>
-            <li>CSCI 434 - Network Systems & Design</li>
-            <li>CSCI 436 - Data Mining</li>
-            <li>CSCI 454 - Computer & Network Security</li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
-        <td>Mathematics Coursework:</td>
-        <td>
-          <ul>
-            <li>AP Calculus AB (MATH 111 - Calculus I)</li>
-            <li>AP Statistics</li>
-            <li>MATH 112 - Calculus II</li>
-            <li>MATH 211 - Linear Algebra</li>
-            <li>MATH 213 - Multivariable Calculus</li>
-            <li>MATH 351 - Probability and Statistics for Scientists</li>
-            <li>MATH 352 - Statistical Data Analysis</li>
-            <li>MATH 465 - Math of Financial Economics</li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
-        <td>Other Relevant Coursework:</td>
-        <td>
-          <ul>
-            <li>AP Chinese Language & Culture (CHIN 205 & CHIN 206 -  Intermediate Chinese Consolidated I & II)</li>
-            <li>BUAD 340 - Introduction to Innovation & Entrepreneurship</li>
-            <li>CHIN 301 - Upper-Intermediate Chinese I</li>
-            <li>CHIN 302 - Upper-Intermediate Chinese II</li>
-            <li>CHIN 410 - Advanced Topics in Chinese Language, Civilization or Literature</li>
-            <li>CHIN 412 - Teaching Practicum (Teaching Assistant Mentorship for 2 semesters)</li>
-            <li>PHIL 215 - Right and Wrong in the Contemporary World</li>
-            <li>MUSC 101 - Introduction Tonal Theory</li>
-            <li>SPCH 201 - Public Speaking</li>
-            <li>SPCH 309 - Argumentation & Debate</li>
-          </ul>
-        </td>
-      </tr>
-    </table>
-
-    <div class="Footer">
-      <p> Copyright &copy;
-        <span id="copyright">
-          <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-        </span>
-        Julia Butler  •  <a href="https://www.linkedin.com/in/juliafulibutler/" target="_blank">LinkedIn</a></p>
-    </div>
+    <footer class="Footer">
+      <p>Copyright &copy; <span id="copyright"></span> Julia Butler  •  <a href="https://www.linkedin.com/in/juliafulibutler/" target="_blank">LinkedIn</a></p>
+      <script>document.getElementById('copyright').textContent = new Date().getFullYear();</script>
+    </footer>
 
   </body>
 </html>

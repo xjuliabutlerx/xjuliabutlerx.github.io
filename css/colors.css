@@ -1,0 +1,19 @@
+/*
+Color Palette Guide:
+  Gainsboro: #E0E0E2 (gray)
+  Dark Red: #B10F2E
+  Rich Black: #0E1116
+  Metallic Sunburst: #9B7E46 (gold)
+  Accent Blue: #3A6EA5
+  Accent Light: #F7F7FA
+  Google Font: 'Inter', sans-serif
+*/
+
+:root {
+    --primary-color: #E0E0E2;
+    --secondary-color: #B10F2E;
+    --accent-color: #9B7E46;
+    --secondary-accent-color: #F7F7FA;
+    --text-color: #0E1116;
+    --link-color: #9B7E46;
+}

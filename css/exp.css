@@ -18,7 +18,7 @@
   color: var(--secondary-color);
 }
 .Introduction a:hover {
-  color: var(--accent-color);
+  color: var(--secondary-color);
 }
 
 

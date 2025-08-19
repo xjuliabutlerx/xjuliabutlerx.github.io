@@ -19,7 +19,7 @@
   color: var(--secondary-color);
 }
 .Introduction a:hover {
-  color: var(--accent-color);
+  color: var(--secondary-color);
 }
 .Introduction h1 {
   font-size: 2rem;
@@ -72,7 +72,7 @@
   color: var(--secondary-color);
 }
 .Overview_Skills a:hover {
-  color: var(--accent-color);
+  color: var(--secondary-color);
 }
 .Overview_Skills li {
   font-size: 1.1rem;

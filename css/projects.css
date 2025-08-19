@@ -14,17 +14,17 @@
 }
 
 .Introduction a {
-  color: var(--text-color);
+  color: var(--link-color);
   font-size: 18px;
 }
 
 .Introduction a:visited {
-  color: var(--text-color);
+  color: var(--link-color);
 }
 
 .Introduction a:hover {
   font-family: "Avenir Next", "Nunito", sans-serif;
-  color: var(--accent-color);
+  color: var(--secondary-color);
 }
 
 .Introduction h1 {

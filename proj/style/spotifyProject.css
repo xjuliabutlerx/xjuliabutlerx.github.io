@@ -1,66 +1,3 @@
-/*
-Color Pallette Guide:
-Gainsboro - #E0E0E2 (gray)
-Dark Red - #B10F2E
-Rich Black - #0E1116
-Metallic Sunburst - #9B7E46 (gold)
-/*
-
-/* CSS Code for making the Header of the Homepage */
-.Header {
-  padding: 20px;
-  background-color: #E0E0E2;
-}
-
-.Header h1 {
-  font-size: 32px;
-  font-weight: bold;
-  font-family: "Avenir Next", "Nunito", sans-serif;
-  text-align: center;
-  color: #0E1116;
-}
-
-/* The navbar container */
-.Navigation {
-  overflow: hidden;
-  background-color: #B10F2E;
-}
-
-/* Navbar links */
-.Navigation a {
-  float: left;
-  display: block;
-  font-family: "Avenir Next", "Nunito", sans-serif;
-  color: #E0E0E2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Links - change color on hover */
-.Navigation a:hover {
-  background-color: #9B7E46;
-  color: #E0E0E2;
-}
-
-.Back {
-  align-content: left;
-}
-
-.Back a {
-  font-family: "Avenir Next", "Nunito", sans-serif;
-  color: #0E1116;
-}
-
-.Back a:visited {
-  color #000000;
-}
-
-.Back a:hover {
-  font-family: "Avenir Next", "Nunito", sans-serif;
-  color: #9B7E46;
-}
-
 .Project_Introduction {
   align-content: left;
 }
@@ -83,26 +20,9 @@ Metallic Sunburst - #9B7E46 (gold)
   text-align: left;
 }
 
-.Project_Introduction a {
-  font-size: 18px;
-  font-family: "Avenir Next", "Nunito", sans-serif;
-  text-align: left;
-  color: #000000;
-}
-
-.Project_Introduction a:visited {
-  font-family: "Avenir Next", "Nunito", sans-serif;
-  color: #000000;
-}
-
-.Project_Introduction a:hover {
-  font-family: "Avenir Next", "Nunito", sans-serif;
-  color: #9B7E46;
-}
-
 .Sources {
   font-family: "Avenir Next", "Nunito", sans-serif;
-  color: #000000;
+  color: var(--text-color);
   font-size: 18px;
   text-align: center;
 }
@@ -113,13 +33,13 @@ Metallic Sunburst - #9B7E46 (gold)
 
 .Definition {
   font-family: "Avenir Next", "Nunito", sans-serif;
-  color: #000000;
+    color: var(--text-color);
   font-size: 18px;
 }
 
 .Attributes {
   font-family: "Courier";
-  color: #000000;
+    color: var(--text-color);
   font-size: 18px;
   font-weight: bold;
 }
@@ -146,56 +66,56 @@ Metallic Sunburst - #9B7E46 (gold)
 #alpha {
   font-family: "Arial";
   font-size: 18px;
-  color: #000000;
+  color: var(--text-color);
 }
 
 .Comment {
   font-family: "Avenir Next", "Nunito", sans-serif;
-  color: #000000;
+  color: var(--text-color);
   font-size: 18px;
   text-align: left;
 }
 
 .Source {
   font-family: "Avenir Next", "Nunito", sans-serif;
-  color: #000000;
+  color: var(--text-color);
   font-size: 10px;
 }
-
+    
 .Source a {
   font-family: "Avenir Next", "Nunito", sans-serif;
   color: #0E1116;
 }
 
 .Source a:visited {
-  color #000000;
+  color: var(--text-color);
 }
 
 .Source a:hover {
-  color: #9B7E46;
+  color: var(--accent-color);
 }
 
 .Function {
   font-family: "Courier";
   font-size: 18px;
-  color: #000000;
+  color: var(--text-color);
 }
 
 #Note {
   font-family: "Avenir Next", "Nunito", sans-serif;
   font-size: 14px;
-  color: #000000;
+  color: var(--text-color);
 }
-
+    
 .Description {
   font-family: "Avenir Next", "Nunito", sans-serif;
-  color: #000000;
+  color: var(--text-color);
   font-size: 18px;
 }
 
 .Questions {
   font-family: "Avenir Next", "Nunito", sans-serif;
-  color: #000000;
+  color: var(--text-color);
   font-size: 18px;
 }
 
@@ -205,29 +125,6 @@ Metallic Sunburst - #9B7E46 (gold)
 
 .Conclusion {
   font-family: "Avenir Next", "Nunito", sans-serif;
-  color:#000000;
+  color: var(--text-color);
   font-size: 18px;
-}
-
-.Footer {
-  background-color: #E0E0E2;
-  text-align: center;
-  padding: 10px;
-}
-
-.Footer p {
-  font-size: 16px;
-  color: #0E1116;
-  font-family: "Avenir Next", "Nunito", sans-serif;
-}
-
-.Footer a {
-  font-size: 16px;
-  color: #0E1116;
-  font-family: "Avenir Next", "Nunito", sans-serif;
-}
-
-.Footer a:hover {
-  background-color: #9B7E46;
-  color: #E0E0E2;
 }

@@ -1,3 +1,11 @@
+/* Introduction Section */
+.Introduction {
+  max-width: 1500px;
+  margin: 2rem auto 2.5rem auto;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+}
+
 .Introduction p {
   font-size: 18px;
   font-family: "Avenir Next", "Nunito", sans-serif;
@@ -6,17 +14,17 @@
 }
 
 .Introduction a {
-  color: var(--text-color);
+  color: var(--link-color);
   font-size: 18px;
 }
 
 .Introduction a:visited {
-  color: var(--text-color);
+  color: var(--link-color);
 }
 
 .Introduction a:hover {
   font-family: "Avenir Next", "Nunito", sans-serif;
-  color: var(--accent-color);
+  color: var(--secondary-color);
 }
 
 .Introduction h1 {

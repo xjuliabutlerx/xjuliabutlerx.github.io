@@ -27,13 +27,8 @@ h1 {
   font-size: 5px;
 }
 
-.Right p {
+.Right p, ul, li {
   font-size: 18px;
   font-family: "Avenir Next", "Nunito", sans-serif;
   margin-right: 20px;
-}
-
-.Right ul {
-  font-size: 18px;
-  font-family: "Avenir Next", "Nunito", sans-serif;
 }

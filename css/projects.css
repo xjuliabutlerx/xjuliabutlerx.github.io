@@ -1,3 +1,11 @@
+/* Introduction Section */
+.Introduction {
+  max-width: 1500px;
+  margin: 2rem auto 2.5rem auto;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+}
+
 .Introduction p {
   font-size: 18px;
   font-family: "Avenir Next", "Nunito", sans-serif;

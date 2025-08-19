@@ -75,6 +75,10 @@ body {
   box-shadow: 0 6px 24px rgba(58, 110, 165, 0.15);
 }
 
+.Project {
+    padding: 1rem;
+}
+
 /* Footer */
 .Footer {
   background: var(--primary-color);

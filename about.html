@@ -1,64 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>About - Julia Butler</title>
-    <link rel="stylesheet" href="css/colors.css"/>
-    <link rel="stylesheet" href="css/components.css"/>
-    <link rel="stylesheet" media="all" href="css/about.css"/>
-    <link rel="stylesheet" media="only screen and (max-width: 1000px)" href="css/aboutMobile.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-  </head>
-  <body>
-
-    <header class="Header">
-      <h1>Julia Butler</h1>
-    </header>
-
-    <nav class="Navigation" aria-label="Main Navigation">
-      <a href="index.html" target="_self">Home</a>
-      <a href="projects.html" target="_self">Projects</a>
-      <a href="exp.html" target="_self">Experience</a>
-      <a href="about.html" target="_self">About</a>
-    </nav>
-
-    <main class="AboutMain">
-      <div class="Left">
-        <img src="img/Headshot.jpg" id="Portrait" alt="Portrait of Julia Butler">
-      </div>
-      <div class="Right">
-        <p>
-          Hello! My name is Julia Butler. I am a graduate of the College of William & Mary (2023), 
-          where I majored in Computer Science and minored in Mathematics. I graduated Magna Cum Laude and 
-          was inducted into Phi Beta Kappa. In addition, I obtained an unofficial minor in Chinese Language & 
-          Literature.
-        </p>
-        <p>
-          I'm originally from Jacksonville, Florida. Aside from my affinity for
-          computer science and mathematics, I enjoy learning foreign languages, reading, creative writing,
-          playing golf, and listening to music.
-        </p>
-        <p>
-          Currently, I'm living in Tampa, FL and working as a full-time software engineer.
-        </p>
-        <hr>
-        <p>Fun Facts:</p>
-        <ul>
-          <li>I've climbed (part of) the Great Wall of China 3 times!</li>
-          <li>I know how to juggle!</li>
-          <li>I've had 2 hole-in-ones!</li>
-        </ul>
-      </div>
-    </main>
-
-    <footer class="Footer">
-      <p> Copyright &copy;
-        <span id="copyright">
-          <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-        </span>
-        Julia Butler  •  <a href="https://www.linkedin.com/in/juliafulibutler/" target="_blank">LinkedIn</a></p>
-    </footer>
-
-  </body>
-</html>
+---
+layout: base.html
+title: "About - Julia Butler"
+pageCSS: "css/about.css"
+pageCSSMobile: "css/aboutMobile.css"
+---
+<main class="AboutMain">
+  <div class="Left">
+    <img src="/img/Headshot.jpg" id="Portrait" alt="Portrait of Julia Butler">
+  </div>
+  <div class="Right">
+    <p>
+      Hello! My name is Julia Butler. I am a graduate of the College of William & Mary (2023),
+      where I majored in Computer Science and minored in Mathematics. I graduated Magna Cum Laude and
+      was inducted into Phi Beta Kappa. In addition, I obtained an unofficial minor in Chinese Language &
+      Literature.
+    </p>
+    <p>
+      I'm originally from Jacksonville, Florida. Aside from my affinity for
+      computer science and mathematics, I enjoy learning foreign languages, reading, creative writing,
+      playing golf, and listening to music.
+    </p>
+    <p>
+      Currently, I'm living in Tampa, FL and working as a full-time software engineer.
+    </p>
+    <hr>
+    <p>Fun Facts:</p>
+    <ul>
+      <li>I've climbed (part of) the Great Wall of China 3 times!</li>
+      <li>I know how to juggle!</li>
+      <li>I've had 2 hole-in-ones!</li>
+    </ul>
+  </div>
+</main>

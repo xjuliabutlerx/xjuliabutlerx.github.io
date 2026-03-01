@@ -10,10 +10,30 @@ Color Palette Guide:
 */
 
 :root {
+    /* Colors */
     --primary-color: #E0E0E2;
     --secondary-color: #B10F2E;
     --accent-color: #9B7E46;
     --secondary-accent-color: #F7F7FA;
     --text-color: #0E1116;
     --link-color: #9B7E46;
+
+    /* Typography Scale */
+    --font-size-sm: 14px;
+    --font-size-base: 18px;
+    --font-size-lg: 20px;
+    --font-size-xl: 32px;
+
+    /* Spacing Scale */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 2.5rem;
+
+    /* Border Radius Scale */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 14px;
+    --radius-xl: 16px;
 }

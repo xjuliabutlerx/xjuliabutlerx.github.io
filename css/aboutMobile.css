@@ -2,10 +2,6 @@
   align-content: left;
 }
 
-h1 {
-  font-size: 5px;
-}
-
 .Left {
   margin-top: 10px;
   width: 100%;
@@ -13,7 +9,7 @@ h1 {
   text-align: center;
 }
 
-.Left Portrait {
+.Left #Portrait {
   margin-top: 10px;
   width: 50%;
 }
@@ -21,10 +17,6 @@ h1 {
 .Right {
   width: 100%;
   float: none;
-}
-
-.Left h1 {
-  font-size: 5px;
 }
 
 .Right p, ul, li {

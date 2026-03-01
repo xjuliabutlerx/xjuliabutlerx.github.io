@@ -23,12 +23,8 @@
 .Sources {
   font-family: "Avenir Next", "Nunito", sans-serif;
   color: var(--text-color);
-  font-size: 18px;
-  text-align: center;
-}
-
-.Sources {
   font-size: 16px;
+  text-align: center;
 }
 
 .Definition {

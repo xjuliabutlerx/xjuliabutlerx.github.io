@@ -2,9 +2,6 @@
   align-content: left;
 }
 
-h1 {
-  font-size: 5px;
-}
 /* Layout for About Page */
 .AboutMain {
   display: flex;

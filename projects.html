@@ -7,6 +7,14 @@ pageCSS: "css/projects.css"
   <section class="Introduction">
     <div class="ProjectList">
       <div class="card">
+        <a href="https://box-box-bot.streamlit.app/" target="_blank"><strong>Box Box Bot</strong></a> <span>| <em>Fall 2026</em></span>
+        <p>Box Box Bot is a conversational Formula 1 chatbot built as a multi-agent system with LangChain and LangGraph. A supervisor agent routes each question to one of four specialist agents: one for live stats pulled with <code>fastf1</code>, one for race narratives retrieved from a set of recap documents with RAG, one for championship predictions using a ranking model ported from my F1 World Constructors' and Drivers' Championship projects, and one for in-race strategy questions like undercuts and safety car risk. Some of the tools/libraries I used to complete this project include LangChain, LangGraph, ChromaDB, PyTorch, the Claude API, and Streamlit (linked above).</p>
+      </div>
+      <div class="card">
+        <a href="https://f1-drivers-predictor.streamlit.app/" target="_blank"><strong>F1 World Drivers' Championship Ranking Models</strong></a> <span>| <em>Fall 2026</em></span>
+        <p>As a sibling project to my F1 World Constructors' Championship Ranking Models, I built a pairwise ranking model to forecast the final World Drivers' Championship rank of individual Formula 1 drivers throughout a season. The model considers each driver's own historical performance alongside their teammate's and their team's competitiveness, and correctly handles mid-season lineup changes by building each driver's stats only from the rounds they actually raced. The project description and interactive dashboard are all contained in my dashboard deployed to Streamlit (linked above).</p>
+      </div>
+      <div class="card">
         <a href="https://f1-constructors-predictor.streamlit.app" target="_blank"><strong>F1 World Constructors' Championship Ranking Models</strong></a> <span>| <em>Fall 2025</em></span>
         <p>As a fan of Formula 1 and a software engineer, I was stunned by how much data is readily available about each of the teams and drivers. With powerful libraries like <code>fastf1</code>, I wanted to challenge myself to make a ranking model for the World Constructors' Championship. Over the course of a month, I brushed up on my data mining and machine learning skills from school and completed this project while working full time. The project description and interactive scenario simulator are all contained in my dashboard deployed to Streamlit (linked above).</p>
       </div>
